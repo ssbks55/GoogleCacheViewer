@@ -1,0 +1,879 @@
+------------------------------------------Koogle Log ---19/06/2015 05:23:33 PM-------------------------------------- 
+Search Query: https://www.hackerrank.com/domains/algorithms
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---19/06/2015 05:40:19 PM-------------------------------------- 
+Search Query: sdfsdf
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---19/06/2015 05:50:31 PM-------------------------------------- 
+Search Query: 
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---19/06/2015 06:01:21 PM-------------------------------------- 
+Search Query: http://articles.baltimoresun.com/2013-01-03/news/bs-md-cecil-county-shooting-20130103_1_ajs-court-stray-bullet-celebratory
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---22/06/2015 03:13:27 PM-------------------------------------- 
+Search Query: frwfsf fdf
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---24/06/2015 02:17:20 PM-------------------------------------- 
+Search Query: http://webcache.googleusercontent.com/search?q=cache:33spoUjkJWMJ:www.glassdoor.co.in/Interview/Accolite-Senior-Software-Engineer-Interview-Questions-EI_IE271055.0,8_KO9,33.htm+&cd=9&hl=en&ct=clnk
+IP: 172.17.3.137 HostName: 172.17.3.137
+------------------------------------------Koogle Log ---24/06/2015 02:18:05 PM-------------------------------------- 
+Search Query: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=9&cad=rja&uact=8&ved=0CFIQFjAI&url=http%3A%2F%2Fwww.glassdoor.co.in%2FInterview%2FAccolite-Senior-Software-Engineer-Interview-Questions-EI_IE271055.0%2C8_KO9%2C33.htm&ei=Wm6KVfHrBIS8ugTTwIOACA&usg=AFQjCNGuNY4MkVW58f1muJMZm-TjEoOX6w&sig2=78yWiUugj9_lAgmn-Ag1nw&bvm=bv.96339352,d.c2E
+IP: 172.17.3.137 HostName: 172.17.3.137
+------------------------------------------Koogle Log ---24/06/2015 02:19:11 PM-------------------------------------- 
+Search Query: http%3A%2F%2Fwww.glassdoor.co.in%2FInterview%2FAccolite-Senior-Software-Engineer-Interview-Questions
+IP: 172.17.3.137 HostName: 172.17.3.137
+------------------------------------------Koogle Log ---24/06/2015 02:19:35 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Interview/Accolite-Senior-Software-Engineer-Interview-Questions
+IP: 172.17.3.137 HostName: 172.17.3.137
+------------------------------------------Koogle Log ---30/06/2015 10:31:48 AM-------------------------------------- 
+Search Query: 
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 10:34:57 AM-------------------------------------- 
+Search Query: http://www.youtube.com/watch?v=lcNL_HLpcEs
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:09:08 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:12 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:16 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:17 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:18 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:18 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:22 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:22 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:22 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:22 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:23 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:23 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:23 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:23 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:23 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:24 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:24 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:24 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:24 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:24 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:24 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:25 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Reviews/VServ-Solutions-Reviews-E502675.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:09:41 PM-------------------------------------- 
+Search Query: http://www.glassdoor.co.in/Overview/Working-at-VServ-Solutions-EI_IE502675.11,26.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:10:00 PM-------------------------------------- 
+Search Query: http://www.glassdoor.com/Reviews/Vserv-Digital-Services-Reviews-E665029.htm
+IP: 172.17.3.143 HostName: 172.17.3.143
+------------------------------------------Koogle Log ---30/06/2015 02:11:08 PM-------------------------------------- 
+Search Query: http://www.glassdoor.com/Reviews/Employee-Review-VServ-Solutions-RVW2089316.htm
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:11:09 PM-------------------------------------- 
+Search Query: http://www.glassdoor.com/Reviews/Employee-Review-VServ-Solutions-RVW2089316.htm
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:11:09 PM-------------------------------------- 
+Search Query: http://www.glassdoor.com/Reviews/Employee-Review-VServ-Solutions-RVW2089316.htm
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:11:10 PM-------------------------------------- 
+Search Query: http://www.glassdoor.com/Reviews/Employee-Review-VServ-Solutions-RVW2089316.htm
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:11:10 PM-------------------------------------- 
+Search Query: http://www.glassdoor.com/Reviews/Employee-Review-VServ-Solutions-RVW2089316.htm
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:11:10 PM-------------------------------------- 
+Search Query: http://www.glassdoor.com/Reviews/Employee-Review-VServ-Solutions-RVW2089316.htm
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:11:10 PM-------------------------------------- 
+Search Query: http://www.glassdoor.com/Reviews/Employee-Review-VServ-Solutions-RVW2089316.htm
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:11:19 PM-------------------------------------- 
+Search Query: www.glassdoor.com/Reviews/Employee-Review-VServ-Solutions-RVW2089316.htm
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:11:25 PM-------------------------------------- 
+Search Query: www.glassdoor.com
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:11:27 PM-------------------------------------- 
+Search Query: www.glassdoor.com
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:11:33 PM-------------------------------------- 
+Search Query: google
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:11:34 PM-------------------------------------- 
+Search Query: google
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:11:35 PM-------------------------------------- 
+Search Query: google
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:11:37 PM-------------------------------------- 
+Search Query: google
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---30/06/2015 02:12:19 PM-------------------------------------- 
+Search Query: koogle
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---30/06/2015 02:12:51 PM-------------------------------------- 
+Search Query: http://www.glassdoor.com/Reviews/Employee-Review-VServ-Solutions-RVW2089316.htm
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---30/06/2015 02:12:55 PM-------------------------------------- 
+Search Query: http://www.glassdoor.com/Reviews/Employee-Review-VServ-Solutions-RVW2089316.htm
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---30/06/2015 02:13:11 PM-------------------------------------- 
+Search Query: http://www.glassdoor.com/Reviews/Employee-Review-VServ-Solutions-RVW2089316.htm
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---30/06/2015 02:13:50 PM-------------------------------------- 
+Search Query: http://www.glassdoor.com/Reviews/Employee-Review-VServ-Solutions-RVW2089316.htm
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---30/06/2015 02:14:26 PM-------------------------------------- 
+Search Query: http://www.glassdoor.com/Reviews/Employee-Review-VServ-Solutions-RVW2089316.htm
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---01/07/2015 11:50:12 AM-------------------------------------- 
+Search Query: http://gravitylight.org/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---01/07/2015 12:03:01 PM-------------------------------------- 
+Search Query: http://www.interviewbit.com/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---02/07/2015 12:42:25 PM-------------------------------------- 
+Search Query: http://www.supercheats.com/iphoneipad/questions/dreamleaguesoccer/301204/What-defensive-players-will-re.htm
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---02/07/2015 12:56:31 PM-------------------------------------- 
+Search Query: http://www.supercheats.com/iphoneipad/questions/dreamleaguesoccer/284902/Who-are-the-classic-players.htm
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---03/07/2015 03:32:05 PM-------------------------------------- 
+Search Query: http://allnurses.com/nursing-educators-faculty/preceptors-vs-clinical-89361.html
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---03/07/2015 04:37:39 PM-------------------------------------- 
+Search Query: http://www.sportskeeda.com/slideshow/football-best-soccer-players-sported-the-number-10-jersey
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---03/07/2015 04:38:29 PM-------------------------------------- 
+Search Query: http://www.sportskeeda.com/slideshow/football-best-soccer-players-sported-the-number-10-jersey?imgid=12467
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---06/07/2015 11:07:21 AM-------------------------------------- 
+Search Query: http://www.worldairportawards.com/Awards/worlds_best_airport.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---06/07/2015 05:09:22 PM-------------------------------------- 
+Search Query: http://www.igniterealtime.org/builds/spark/docs/spark_user_guide.pdf
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---24/07/2015 10:15:22 AM-------------------------------------- 
+Search Query: http://www.rejetto.com/hfs/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---27/07/2015 11:30:15 AM-------------------------------------- 
+Search Query: http://codereply.com/answer/3t1j2t/insert-byte-sql-server-varbinary-column.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---27/07/2015 11:31:41 AM-------------------------------------- 
+Search Query: http://www.dbforums.com/showthread.php?1653774-Syntax-for-INSERT-ing-VARBINARY%28MAX%29-values
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---27/07/2015 11:31:52 AM-------------------------------------- 
+Search Query: http://www.dbforums.com/showthread.php?1653774-Syntax-for-INSERT-ing-VARBINARY%28MAX%29-values
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---27/07/2015 02:20:35 PM-------------------------------------- 
+Search Query: http://www.weightwatchers.com/util/art/index_art.aspx?art_id=8311&sc=128
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---28/07/2015 05:08:12 PM-------------------------------------- 
+Search Query: http://www.supercheats.com/dream-league-soccer/walkthrough/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---28/07/2015 05:09:00 PM-------------------------------------- 
+Search Query: http://forums.supercheats.com/video-games/dream-league-soccer
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---29/07/2015 10:42:58 AM-------------------------------------- 
+Search Query: http://www.popsci.com/if-earth-were-swallowed-black-hole-we-might-not-even-notice
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---05/08/2015 10:13:03 AM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---05/08/2015 10:14:45 AM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 10:17:28 AM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 10:26:16 AM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 10:30:46 AM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 10:31:49 AM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 10:44:32 AM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 10:49:35 AM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 03:47:25 PM-------------------------------------- 
+Search Query: http://www.fedex.com/in/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---05/08/2015 04:01:44 PM-------------------------------------- 
+Search Query: http://www.fedex.com/in/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---05/08/2015 04:04:47 PM-------------------------------------- 
+Search Query: http://www.fedex.com/in/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:05:38 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---05/08/2015 04:06:09 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:07:06 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:08:28 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:09:01 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:17:27 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:19:49 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:21:20 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:22:04 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:22:30 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:29:23 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:29:36 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:29:49 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:33:28 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:34:08 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:34:39 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:34:57 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:35:18 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:36:03 PM-------------------------------------- 
+Search Query: http://www.superwebtricks.com/earn-money-online/adsense-approval-for-blog-website/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:37:00 PM-------------------------------------- 
+Search Query: http://www.supercheats.com/dream-league-soccer/walkthrough/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---05/08/2015 04:37:14 PM-------------------------------------- 
+Search Query: http://www.supercheats.com/dream-league-soccer/walkthrough/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:38:09 PM-------------------------------------- 
+Search Query: http://www.supercheats.com/dream-league-soccer/walkthrough/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:38:48 PM-------------------------------------- 
+Search Query: http://www.popsci.com/if-earth-were-swallowed-black-hole-we-might-not-even-notice
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---05/08/2015 04:39:18 PM-------------------------------------- 
+Search Query: dasdad
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:40:15 PM-------------------------------------- 
+Search Query: sdff sfsdfsdf
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:40:26 PM-------------------------------------- 
+Search Query: goofle.com
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:40:33 PM-------------------------------------- 
+Search Query: google.com
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:41:56 PM-------------------------------------- 
+Search Query: google.com
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:43:41 PM-------------------------------------- 
+Search Query: google.com
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:43:49 PM-------------------------------------- 
+Search Query: flipkart.com
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---05/08/2015 04:43:52 PM-------------------------------------- 
+Search Query: flipkart.com
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---07/08/2015 04:08:06 PM-------------------------------------- 
+Search Query: blogs.discovermagazine.com/seriouslyscience/2014/06/18/scientific-explanation-earphones-always-tangled/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---11/08/2015 04:37:20 PM-------------------------------------- 
+Search Query: http://btwindia.com/catering.aspx
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---11/08/2015 04:38:09 PM-------------------------------------- 
+Search Query: http://btwindia.com/full-catering.aspx
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---14/08/2015 12:24:35 PM-------------------------------------- 
+Search Query: http://forum.bodybuilding.com/showthread.php?t=994154
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---14/08/2015 02:24:37 PM-------------------------------------- 
+Search Query: http://www.livestrong.com/article/336903-protein-powder-headaches/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---14/08/2015 02:31:07 PM-------------------------------------- 
+Search Query: http://www.menshealth.com/nutrition/protein-sources
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---14/08/2015 02:47:28 PM-------------------------------------- 
+Search Query: synus headache
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---14/08/2015 02:54:19 PM-------------------------------------- 
+Search Query: http://www.menshealth.com/nutrition/protein-sources
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---14/08/2015 02:55:35 PM-------------------------------------- 
+Search Query: http://www.menshealth.com/nutrition/protein-sources
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---14/08/2015 03:32:02 PM-------------------------------------- 
+Search Query: http://jwwishart.blogspot.com/2011/03/custom-server-and-client-side-required.html
+IP: 172.17.3.135 HostName: 172.17.3.135
+------------------------------------------Koogle Log ---14/08/2015 04:24:45 PM-------------------------------------- 
+Search Query: http://www.mysmartprice.com/computer/pricelist/sandisk-computer-pendrive-price-list-in-india.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---17/08/2015 02:53:21 PM-------------------------------------- 
+Search Query: http://vserv-it.com/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---17/08/2015 02:55:32 PM-------------------------------------- 
+Search Query: http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0CB0QFjAAahUKEwjspbn-5a_HAhXDSY4KHdWGAGw&url=http%3A%2F%2Fwww.glassdoor.com%2FInterview%2FFiserv-Interview-Questions-E1384.htm&ei=ZajRVazfPMOTuQTVjYLgBg&usg=AFQjCNHpImY6Mw0pW0iiR_DNgOhbTlEQgw&sig2=XemZpAgDjK3jxf64vFeK4w&bvm=bv.99804247,d.c2E&cad=rja
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---18/08/2015 12:17:33 PM-------------------------------------- 
+Search Query: http://fortune.com/rankings/
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---18/08/2015 12:17:58 PM-------------------------------------- 
+Search Query: fortune.com/global500/
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---18/08/2015 12:18:26 PM-------------------------------------- 
+Search Query: fortune.com/global500/
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---18/08/2015 12:22:36 PM-------------------------------------- 
+Search Query: http://newsroom.fiserv.com/releasedetail.cfm?ReleaseID=830470
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---18/08/2015 12:29:02 PM-------------------------------------- 
+Search Query: http://fortune.com/global500/
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---18/08/2015 12:29:13 PM-------------------------------------- 
+Search Query: http://fortune.com/rankings/
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---18/08/2015 12:42:30 PM-------------------------------------- 
+Search Query: http://techblogbiz.blogspot.com/2013/10/top-ten-indian-football-players.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---18/08/2015 03:59:49 PM-------------------------------------- 
+Search Query: http://www.kshitij.com/research/petrol.shtml
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---18/08/2015 04:39:14 PM-------------------------------------- 
+Search Query: http://www.ooyuz.com/geturl?aid=7822314
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---18/08/2015 04:52:21 PM-------------------------------------- 
+Search Query: http://www.washingtontimes.com/multimedia/collection/top-10-fighter-jets/
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---18/08/2015 05:27:28 PM-------------------------------------- 
+Search Query: http://www.washingtontimes.com/multimedia/collection/
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---19/08/2015 05:07:03 PM-------------------------------------- 
+Search Query: https://www.blablacar.in/ride-sharing/to-pathankot/
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---19/08/2015 05:07:58 PM-------------------------------------- 
+Search Query: https://www.blablacar.in/ride-sharing/to-pathankot/
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---19/08/2015 05:09:51 PM-------------------------------------- 
+Search Query: http://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0CD4QFjABahUKEwj96_S_hrXHAhVBGJQKHWbwACc&url=http%3A%2F%2Fwww.carpooling.in%2F&ei=k2nUVb3WN8Gw0ATm4IO4Ag&usg=AFQjCNG-lhN9DmEOAp3qd7gWmW-MyKEMAQ
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---19/08/2015 05:10:04 PM-------------------------------------- 
+Search Query: http://www.carpooling.in/
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---19/08/2015 05:10:45 PM-------------------------------------- 
+Search Query: http://www.carpooling.in/city/Chandigarh
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---19/08/2015 05:10:49 PM-------------------------------------- 
+Search Query: http://www.carpooling.in/city/Chandigarh
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---19/08/2015 05:10:50 PM-------------------------------------- 
+Search Query: http://www.carpooling.in/city/Chandigarh
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---19/08/2015 05:11:01 PM-------------------------------------- 
+Search Query: http://www.carpooling.in/city/Chandigarh
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---19/08/2015 05:16:04 PM-------------------------------------- 
+Search Query: http://www.carpooling.in/city/Chandigarh
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---19/08/2015 05:16:17 PM-------------------------------------- 
+Search Query: http://www.carpooling.in/
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---19/08/2015 05:16:33 PM-------------------------------------- 
+Search Query: http://www.carpooling.in/new-carpool/regular/
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---19/08/2015 05:20:57 PM-------------------------------------- 
+Search Query: https://www.blablacar.in/ride-sharing/to-pathankot/
+IP: 172.17.3.3 HostName: 172.17.3.3
+------------------------------------------Koogle Log ---20/08/2015 10:53:59 AM-------------------------------------- 
+Search Query: http://dwbi.org/database/sql/72-top-20-sql-interview-questions-with-answers
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---20/08/2015 12:43:51 PM-------------------------------------- 
+Search Query: https://www.ixigo.com/how-to-reach-go-from/new-delhi-to-gurgaon-fast
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---20/08/2015 05:01:15 PM-------------------------------------- 
+Search Query: http://world-defece-review.blogspot.com/2013/03/indian-navy-marcosbrief-analysis.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---20/08/2015 05:02:38 PM-------------------------------------- 
+Search Query: http://www.wonderslist.com/10-best-special-forces-world/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---20/08/2015 05:30:29 PM-------------------------------------- 
+Search Query: gdfg
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---20/08/2015 05:30:59 PM-------------------------------------- 
+Search Query: mock .net interview for 2 years
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---20/08/2015 05:32:03 PM-------------------------------------- 
+Search Query: http://questpond.blog.com/2014/02/06/c-mock-testing-interview-questions-with-answers-%25E2%2580%2593-what-is-mock-testing-and-how-can-we-implement-mocking/&sa=U&ved=0CBgQFjABahUKEwj5moK8zrfHAhURB44KHUfjAC8&usg=AFQjCNHTJxs6YqVACHrH_Pnc6uy2eOxxTw
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---24/08/2015 04:25:33 PM-------------------------------------- 
+Search Query: http://haacked.com/archive/2011/10/04/prevent-forms-authentication-login-page-redirect-when-you-donrsquot-want.aspx
+IP: 172.17.3.133 HostName: 172.17.3.133
+------------------------------------------Koogle Log ---25/08/2015 09:20:25 AM-------------------------------------- 
+Search Query: http://auto.ndtv.com/news/hyundai-creta-compact-suv-10-things-you-should-know-738124
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---25/08/2015 09:21:49 AM-------------------------------------- 
+Search Query: http://www.carblogindia.com/2015-hyundai-ix25-details-revealed/
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---25/08/2015 04:37:38 PM-------------------------------------- 
+Search Query: http://pappugandhi.com/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---25/08/2015 04:39:02 PM-------------------------------------- 
+Search Query: https://in.answers.yahoo.com/question/index?qid=20130720131723AA3Hyrl
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---25/08/2015 04:39:05 PM-------------------------------------- 
+Search Query: https://in.answers.yahoo.com/question/index?qid=20130720131723AA3Hyrl
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---31/08/2015 05:33:43 PM-------------------------------------- 
+Search Query: http://www.carblogindia.com/next-gen-renault-duster-get-7-seats/
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---31/08/2015 06:11:39 PM-------------------------------------- 
+Search Query: http://symptoms.webmd.com/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---31/08/2015 06:13:40 PM-------------------------------------- 
+Search Query: http://www.springwise.com/top-10-business-ideas-opportunities-2015/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---02/09/2015 10:40:00 AM-------------------------------------- 
+Search Query: http://www.telegraph.co.uk/news/worldnews/middleeast/iran/9985757/Iranian-scientist-claims-to-have-invented-time-machine.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---02/09/2015 10:42:54 AM-------------------------------------- 
+Search Query: http://www.dnaindia.com/pune/report-indian-flew-first-airplane-10-years-before-wright-brothers-1833907
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---02/09/2015 11:09:38 AM-------------------------------------- 
+Search Query: http://www.chandigarhexchange.com/MC/top-companies.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---02/09/2015 12:49:22 PM-------------------------------------- 
+Search Query: http://www.team-bhp.com/forum/shifting-gears/21263-whats-best-way-transport-car-bike.html
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---03/09/2015 09:54:21 AM-------------------------------------- 
+Search Query: http://www.muscleandfitness.com/workouts/workout-routines/complete-mf-beginners-training-guide-0
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---03/09/2015 09:55:12 AM-------------------------------------- 
+Search Query: http://www.justgofitness.com/faster-results-in-the-gym/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---03/09/2015 10:35:24 AM-------------------------------------- 
+Search Query: http://www.ibnlive.com/news/india/micromax-becomes-the-no-1-mobile-phone-seller-in-india-but-samsung-still-tops-the-indian-smartphone-market-706329.html
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---03/09/2015 03:34:51 PM-------------------------------------- 
+Search Query: http://irctc.com/
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---03/09/2015 03:35:20 PM-------------------------------------- 
+Search Query: http://irctc.com/
+IP: 172.17.3.8 HostName: 172.17.3.8
+------------------------------------------Koogle Log ---10/09/2015 12:57:23 PM-------------------------------------- 
+Search Query: http://forum.bodybuilding.com/showthread.php?t=776342
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---10/09/2015 01:00:20 PM-------------------------------------- 
+Search Query: http://forum.bodybuilding.com/showthread.php?t=113323351
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---10/09/2015 01:00:57 PM-------------------------------------- 
+Search Query: http://forum.bodybuilding.com/showthread.php?t=134475451
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---15/09/2015 12:30:40 PM-------------------------------------- 
+Search Query: https://www.crisil.com/capital-markets/ipo-grading-list.jsp?check=ipo%20signup
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---15/09/2015 12:37:08 PM-------------------------------------- 
+Search Query: http://www.supercheats.com/dream-league-soccer/walkthrough/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---15/09/2015 12:39:08 PM-------------------------------------- 
+Search Query: 
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---15/09/2015 12:39:55 PM-------------------------------------- 
+Search Query: http://www.fedex.com/in/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---15/09/2015 12:40:02 PM-------------------------------------- 
+Search Query: http://www.fedex.com/in/
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---15/09/2015 12:40:47 PM-------------------------------------- 
+Search Query: http://www.menshealth.com/nutrition/protein-sources
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---15/09/2015 03:54:16 PM-------------------------------------- 
+Search Query: 
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---15/09/2015 04:05:34 PM-------------------------------------- 
+Search Query: http://www.espncricinfo.com/blogs/content/story/617220.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---15/09/2015 04:12:17 PM-------------------------------------- 
+Search Query: http://carpooling.com/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---15/09/2015 04:13:34 PM-------------------------------------- 
+Search Query: http://www.carpool.in/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---16/09/2015 12:11:46 PM-------------------------------------- 
+Search Query: http://www3.sympatico.ca/saburns/pg0405.htm
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---16/09/2015 12:11:54 PM-------------------------------------- 
+Search Query: http://www3.sympatico.ca/saburns/pg0405.htm
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---16/09/2015 12:12:08 PM-------------------------------------- 
+Search Query: www3.sympatico.ca/saburns/pg0405.htm
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---16/09/2015 02:28:27 PM-------------------------------------- 
+Search Query: http://www.opendesigns.org/website-templates/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---16/09/2015 02:30:32 PM-------------------------------------- 
+Search Query: http://www.espncricinfo.com/blogs/content/story/617220.html
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---16/09/2015 02:31:24 PM-------------------------------------- 
+Search Query: http://www.espncricinfo.com/blogs/content/story/617220.html
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---17/09/2015 10:08:27 AM-------------------------------------- 
+Search Query: http://blog.jongallant.com/2012/10/do-i-have-to-call-dispose-on-dbcontext.html#.U6WdzrGEeTw
+IP: 172.17.3.135 HostName: 172.17.3.135
+------------------------------------------Koogle Log ---17/09/2015 10:16:02 AM-------------------------------------- 
+Search Query: http://timesofindia.indiatimes.com/business/india-business/RBI-grants-licences-to-10-small-banks/articleshow/48993708.cms
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---17/09/2015 10:16:07 AM-------------------------------------- 
+Search Query: http://timesofindia.indiatimes.com/business/india-business/RBI-grants-licences-to-10-small-banks/articleshow/48993708.cms
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---17/09/2015 10:16:31 AM-------------------------------------- 
+Search Query: http://timesofindia.indiatimes.com/business/india-business/RBI-grants-licences-to-10-small-banks/articleshow/48993708.cms
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---17/09/2015 10:16:51 AM-------------------------------------- 
+Search Query: timesofindia.indiatimes.com/business/india-business/RBI-grants-licences-to-10-small-banks/articleshow/48993708.cms
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---17/09/2015 10:18:37 AM-------------------------------------- 
+Search Query: timesofindia.indiatimes.com/business/india-business/RBI-grants-licences-to-10-small-banks/articleshow/48993708.cms
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---17/09/2015 10:19:19 AM-------------------------------------- 
+Search Query: timesofindia.indiatimes.com/business/india-business/RBI-grants-licences-to-10-small-banks/articleshow/48993708.cms
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---17/09/2015 10:20:12 AM-------------------------------------- 
+Search Query: http://timesofindia.indiatimes.com/business/india-business/RBI-grants-licences-to-10-small-banks/articleshow/48993708.cms
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---17/09/2015 02:30:02 PM-------------------------------------- 
+Search Query: http://martinkonicek.net/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---17/09/2015 02:30:14 PM-------------------------------------- 
+Search Query: http://zzzprojects.com/entity-framework-extensions/
+IP: 172.17.3.135 HostName: 172.17.3.135
+------------------------------------------Koogle Log ---18/09/2015 12:26:19 PM-------------------------------------- 
+Search Query: http://peterkellner.net/2014/05/19/asp-net-mvc-forms-need-include-html-antiforgerytoken-security/
+IP: 172.17.3.135 HostName: 172.17.3.135
+------------------------------------------Koogle Log ---18/09/2015 12:26:58 PM-------------------------------------- 
+Search Query: http://www.devcurry.com/2013/01/what-is-antiforgerytoken-and-why-do-i.html
+IP: 172.17.3.135 HostName: 172.17.3.135
+------------------------------------------Koogle Log ---18/09/2015 03:15:52 PM-------------------------------------- 
+Search Query: http://www.devcurry.com/p/aspnet-mvc-101-tutorials-series.html
+IP: 172.17.3.135 HostName: 172.17.3.135
+------------------------------------------Koogle Log ---18/09/2015 03:16:19 PM-------------------------------------- 
+Search Query: http://www.devcurry.com/p/aspnet-mvc-101-tutorials-series.html
+IP: 172.17.3.135 HostName: 172.17.3.135
+------------------------------------------Koogle Log ---21/09/2015 03:02:48 PM-------------------------------------- 
+Search Query: http://www.firstpost.com/world/nepal-gets-a-new-constitution-but-heres-why-it-has-got-india-worried-2440308.html
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---22/09/2015 09:37:41 AM-------------------------------------- 
+Search Query: http://www.accuweather.com/en/in/chandigarh/202350/weather-forecast/202350
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---23/09/2015 10:44:44 AM-------------------------------------- 
+Search Query: http://healthyliving.azcentral.com/long-can-lifting-weights-not-lose-muscle-10720.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---23/09/2015 10:47:56 AM-------------------------------------- 
+Search Query: http://dailyburn.com/life/fitness/skip-the-gym-out-of-shape/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---23/09/2015 12:05:17 PM-------------------------------------- 
+Search Query: http://www.hindustantimes.com/chandigarh/best-schools-in-the-tricity/article1-988031.aspx
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---23/09/2015 12:17:48 PM-------------------------------------- 
+Search Query: https://parentingfundas.wordpress.com/2010/10/18/list-of-best-schools-in-chandigarh/
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---23/09/2015 12:19:21 PM-------------------------------------- 
+Search Query: http://pastebin.com/kRewRzev
+IP: 172.17.3.135 HostName: 172.17.3.135
+------------------------------------------Koogle Log ---23/09/2015 12:20:31 PM-------------------------------------- 
+Search Query: http://www.gnpschandigarh.com/fees.php
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---23/09/2015 12:20:40 PM-------------------------------------- 
+Search Query: http://www.gnpschandigarh.com/fees.php
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---23/09/2015 12:20:58 PM-------------------------------------- 
+Search Query: http://www.gnpschandigarh.com/fees.php
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---23/09/2015 12:21:47 PM-------------------------------------- 
+Search Query: http://www.gnpschandigarh.com/fees.php
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---23/09/2015 12:22:22 PM-------------------------------------- 
+Search Query: http://www.gnpschandigarh.com/fees.php
+IP: ::1 HostName: ::1
+------------------------------------------Koogle Log ---23/09/2015 12:25:38 PM-------------------------------------- 
+Search Query: http://www.gnpschandigarh.com/fees.php
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---23/09/2015 12:25:52 PM-------------------------------------- 
+Search Query: http://www.gnpschandigarh.com/fees.php
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---23/09/2015 02:06:29 PM-------------------------------------- 
+Search Query: http://www.gnpschandigarh.com/fees.php
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---23/09/2015 02:53:27 PM-------------------------------------- 
+Search Query: http://forbesindia.com/article/investment-guide-2015/20-quality-stocks-to-invest-in-2015/39505/1
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---23/09/2015 05:55:09 PM-------------------------------------- 
+Search Query: http://www.rizalalmashoor.com/blog/linq-to-entities-deferred-execution-and-lazy-loading/
+IP: 172.17.3.139 HostName: 172.17.3.139
+------------------------------------------Koogle Log ---23/09/2015 05:57:02 PM-------------------------------------- 
+Search Query: http://www.planetofcoders.com/what-is-difference-between-lazydeferred-loading-and-eager-loading/
+IP: 172.17.3.139 HostName: 172.17.3.139
+------------------------------------------Koogle Log ---24/09/2015 10:26:48 AM-------------------------------------- 
+Search Query: http://www.gnpschandigarh.com/fees.php
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---24/09/2015 01:50:47 PM-------------------------------------- 
+Search Query: http://blog.miniclip.com/2013/07/03/8-ball-pool-tips-tricks/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---24/09/2015 04:07:59 PM-------------------------------------- 
+Search Query: http://www.imdb.com/search/title?num_votes=5000,&sort=user_rating,desc&title_type=tv_series
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---24/09/2015 04:09:38 PM-------------------------------------- 
+Search Query: http://www.imdb.com/search/title?languages=en|1&title_type=tv_series&num_votes=10000,&sort=user_rating,desc
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---24/09/2015 04:09:42 PM-------------------------------------- 
+Search Query: http://www.imdb.com/search/title?languages=en|1&title_type=tv_series&num_votes=10000,&sort=user_rating,desc
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---24/09/2015 05:42:17 PM-------------------------------------- 
+Search Query: https://in.finance.yahoo.com/news/10-stocks-that-could-double-in-2-years-065736411.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---24/09/2015 05:45:18 PM-------------------------------------- 
+Search Query: http://www.rediff.com/business/report/pix-perfin-10-mid-cap-stocks-that-can-give-you-attractive-returns/20141003.htm
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---24/09/2015 06:39:54 PM-------------------------------------- 
+Search Query: http://www.googlerajinikanth.com/how_to_kill_rajinikanth.html
+IP: 172.17.3.135 HostName: 172.17.3.135
+------------------------------------------Koogle Log ---25/09/2015 02:19:42 PM-------------------------------------- 
+Search Query: http://www.bodybuilding.com/fun/vegetarian-bodybuilding.htm
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---25/09/2015 02:21:24 PM-------------------------------------- 
+Search Query: http://www.mensfitness.com/nutrition/what-to-eat/9-foods-that-should-be-in-every-diet
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---25/09/2015 03:22:59 PM-------------------------------------- 
+Search Query: http://www.lifehack.org/articles/lifestyle/11-benefits-of-green-tea-that-you-didnt-know-about.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---25/09/2015 03:24:10 PM-------------------------------------- 
+Search Query: http://www.lifehack.org/articles/lifestyle/10-benefits-of-ginger-that-you-didnt-know-about.html?utm_source=post&utm_medium=ifyouwouldliketousegingertrythisrelatedarticle&utm_campaign=innerlink
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---25/09/2015 05:21:57 PM-------------------------------------- 
+Search Query: https://www.reddit.com/r/askscience/comments/1o5k3j/how_did_we_find_that_bismuth209_is_unstable_if/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---28/09/2015 10:54:56 AM-------------------------------------- 
+Search Query: http://www.aspneto.com/oop-concepts-object-oriented-programming-concepts-with-examples.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---28/09/2015 02:46:12 PM-------------------------------------- 
+Search Query: http://www.countryranker.com/top-ten-hottest-countries-in-the-world/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---29/09/2015 10:45:39 AM-------------------------------------- 
+Search Query: http://www.dnaindia.com/health/report-world-heart-day-7-heart-friendly-foods-to-add-to-your-diet-2129642
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---29/09/2015 10:50:40 AM-------------------------------------- 
+Search Query: http://techkasunu.blogspot.com/2012/02/debugging-classic-asp-in-visual-studio.html
+IP: 172.17.3.135 HostName: 172.17.3.135
+------------------------------------------Koogle Log ---29/09/2015 10:52:07 AM-------------------------------------- 
+Search Query: http://www.mikesdotnetting.com/article/60/debugging-classic-asp-pages-in-visual-studio-2005-on-windows-xp-pro
+IP: 172.17.3.135 HostName: 172.17.3.135
+------------------------------------------Koogle Log ---29/09/2015 10:52:55 AM-------------------------------------- 
+Search Query: http://csc-technicalnotes.blogspot.com/2013/10/debug-classic-asp-in-visual-studio.html
+IP: 172.17.3.135 HostName: 172.17.3.135
+------------------------------------------Koogle Log ---29/09/2015 11:30:53 AM-------------------------------------- 
+Search Query: http://www.webmd.com/food-recipes/10-super-foods
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---29/09/2015 11:32:39 AM-------------------------------------- 
+Search Query: http://www.besthealthmag.ca/best-eats/nutrition/40-foods-high-in-antioxidants
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---29/09/2015 11:40:05 AM-------------------------------------- 
+Search Query: http://www.wellbeing.com.au/blog/essential-oils-the-most-powerful-antioxidants/
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---29/09/2015 11:41:26 AM-------------------------------------- 
+Search Query: http://draxe.com/top-10-high-antioxidant-foods/
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---29/09/2015 12:12:45 PM-------------------------------------- 
+Search Query: http://coconutoil.com/study-traditional-virgin-coconut-oil-high-in-antioxidants-and-reduces-oxidative-stress-in-heart-kidney-and-liver/
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---29/09/2015 12:21:59 PM-------------------------------------- 
+Search Query: http://undergroundhealthreporter.com/coconut-health-benefits/
+IP: 172.17.3.33 HostName: 172.17.3.33
+------------------------------------------Koogle Log ---29/09/2015 12:26:04 PM-------------------------------------- 
+Search Query: http://www.sanwebe.com/2011/12/jquery-move-div-leftrightupdown
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---29/09/2015 04:43:12 PM-------------------------------------- 
+Search Query: https://in.answers.yahoo.com/question/index?qid=20080127231751AAC3mSs
+IP: 172.17.3.135 HostName: 172.17.3.135
+------------------------------------------Koogle Log ---06/10/2015 05:58:51 PM-------------------------------------- 
+Search Query: http://en.mediamass.net/people/matthew-mcconaughey/highest-paid.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---06/10/2015 06:00:29 PM-------------------------------------- 
+Search Query: http://www.forbes.com/pictures/emjl45mmei/the-worlds-highest-paid-/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---06/10/2015 06:01:16 PM-------------------------------------- 
+Search Query: http://www.theguardian.com/film/2015/aug/21/forbes-top-paid-actors-we-need-one-list-for-all-genders
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---13/10/2015 11:09:48 AM-------------------------------------- 
+Search Query: http://indianexpress.com/article/india/india-others/singapore-submits-plan-for-amaravathi-to-cm-naidu-foundation-stone-to-be-laid-on-october-22/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---15/10/2015 12:37:16 PM-------------------------------------- 
+Search Query: http://www.indiatvnews.com/business/india/updated-news-money-success-savings-budget-interest-3660.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---15/10/2015 12:39:03 PM-------------------------------------- 
+Search Query: http://www.indiatvnews.com/business/india/updated-news-money-success-savings-budget-interest-3660.html?page=2
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---15/10/2015 12:39:33 PM-------------------------------------- 
+Search Query: http://www.indiatvnews.com/business/india/updated-news-money-success-savings-budget-interest-3661.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---16/10/2015 03:34:03 PM-------------------------------------- 
+Search Query: http://www.forbes.com/sites/janetnovack/2013/11/27/365-ways-to-get-rich/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---16/10/2015 03:34:23 PM-------------------------------------- 
+Search Query: http://www.forbes.com/sites/janetnovack/2013/11/27/365-ways-to-get-rich/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---20/11/2015 10:04:18 AM-------------------------------------- 
+Search Query: http://www.internationalman.com/articles/the-easiest-country-to-get-citizenship-in
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---20/11/2015 10:08:19 AM-------------------------------------- 
+Search Query: https://www.reddit.com/r/travel/comments/2v6d8b/most_difficult_place_to_get_a_visa_that_you_have/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---20/11/2015 02:58:44 PM-------------------------------------- 
+Search Query: http://www.oneindia.com/2012/03/10/bollywood-actor-shahrukh-khan-link-with-pak-isi-exposed.html
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---26/11/2015 10:07:26 AM-------------------------------------- 
+Search Query: http://www.newsweek.com/vladimir-putin-says-islamization-turkey-bigger-problem-downing-russian-jet-398183
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---09/12/2015 02:27:06 PM-------------------------------------- 
+Search Query: http://indiatoday.intoday.in/story/salman-khan-hit-and-run-case-possible-relief-for-superstar/1/542163.html
+IP: 172.17.3.4 HostName: 172.17.3.4
+------------------------------------------Koogle Log ---10/12/2015 11:44:49 AM-------------------------------------- 
+Search Query: http://www.thehindu.com/sci-tech/science/nasa-finding-bolsters-indian-theory-on-black-hole/article7913106.ece
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---10/12/2015 11:49:11 AM-------------------------------------- 
+Search Query: http://www.newsgram.com/nasa-validates-indian-scientists-black-hole-theory/
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---10/12/2015 11:54:48 AM-------------------------------------- 
+Search Query: http://www.hngn.com/articles/23781/20140205/black-hole-paradox-resolved-indian-physicist-much-before-stephen-hawking.htm
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---11/12/2015 10:09:57 AM-------------------------------------- 
+Search Query: http://timesofindia.indiatimes.com/home/environment/pollution/North-Indias-cities-the-most-polluted-souths-cleanest/articleshow/45663730.cms
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---17/12/2015 12:37:38 PM-------------------------------------- 
+Search Query: http://www.businessinsider.com/clash-of-clans-earns-15-million-a-day-as-top-grossing-app-2015-6
+IP: 172.17.3.4 HostName: 172.17.3.4
+------------------------------------------Koogle Log ---17/12/2015 12:41:39 PM-------------------------------------- 
+Search Query: http://webcache.googleusercontent.com/search?q=cache:
+IP: 172.17.3.4 HostName: 172.17.3.4
+------------------------------------------Koogle Log ---17/12/2015 12:42:03 PM-------------------------------------- 
+Search Query: http://www.androidheadlines.com/2015/05/supercell-makes-5-million-per-day-off-clash-clans.html
+IP: 172.17.3.4 HostName: 172.17.3.4
+------------------------------------------Koogle Log ---17/12/2015 04:19:53 PM-------------------------------------- 
+Search Query: https://in.answers.yahoo.com/question/index?qid=20070513083805AAMVGcD
+IP: 172.17.3.2 HostName: 172.17.3.2
+------------------------------------------Koogle Log ---17/12/2015 04:20:00 PM-------------------------------------- 
+Search Query: http://in.answers.yahoo.com/question/index?qid=20070513083805AAMVGcD
+IP: 172.17.3.2 HostName: 172.17.3.2
+------------------------------------------Koogle Log ---17/12/2015 04:20:05 PM-------------------------------------- 
+Search Query: in.answers.yahoo.com/question/index?qid=20070513083805AAMVGcD
+IP: 172.17.3.2 HostName: 172.17.3.2
+------------------------------------------Koogle Log ---17/12/2015 04:24:55 PM-------------------------------------- 
+Search Query: http://www.androidheadlines.com/2015/05/supercell-makes-5-million-per-day-off-clash-clans.html
+IP: 172.17.3.4 HostName: 172.17.3.4
+------------------------------------------Koogle Log ---17/12/2015 04:30:53 PM-------------------------------------- 
+Search Query: http://www.thebitbag.com/clash-of-clans-christmas-update-december-2015-winter-special-to-receive-newly-designed-decorations-and-tweaks-to-major-update/123303
+IP: 172.17.3.4 HostName: 172.17.3.4
+------------------------------------------Koogle Log ---17/12/2015 05:38:01 PM-------------------------------------- 
+Search Query: http://www.thebitbag.com/clash-of-clans-christmas-update-december-2015-winter-special-to-receive-newly-designed-decorations-and-tweaks-to-major-update/123303
+IP: 172.17.3.4 HostName: 172.17.3.4
+------------------------------------------Koogle Log ---17/12/2015 05:39:00 PM-------------------------------------- 
+Search Query: http://forum.supercell.net/showthread.php/947139-Post-update-maintenance-break-and-optional-update
+IP: 172.17.3.4 HostName: 172.17.3.4
+------------------------------------------Koogle Log ---17/12/2015 05:39:51 PM-------------------------------------- 
+Search Query: http://en.yibada.com/articles/86228/20151118/clash-clans-coc-winter-theme-update-details-release-date-feature-upgrade-christmas-launch.htm
+IP: 172.17.3.4 HostName: 172.17.3.4
+------------------------------------------Koogle Log ---17/12/2015 05:40:39 PM-------------------------------------- 
+Search Query: http://en.yibada.com/articles/86948/20151119/when-clash-clans-coc-christmas-update-will-released-10-major-upgrade-dlc-patch.htm
+IP: 172.17.3.4 HostName: 172.17.3.4
+------------------------------------------Koogle Log ---17/12/2015 05:49:43 PM-------------------------------------- 
+Search Query: http://www.parentherald.com/articles/14164/20151217/clash-clans-town-hall-11-update-supercell-confirms-two-more.htm
+IP: 172.17.3.4 HostName: 172.17.3.4
+------------------------------------------Koogle Log ---21/12/2015 11:58:21 AM-------------------------------------- 
+Search Query: http://www.fox5vegas.com/category/208642/news
+IP: 172.17.3.2 HostName: 172.17.3.2
+------------------------------------------Koogle Log ---21/12/2015 11:58:47 AM-------------------------------------- 
+Search Query: http://www.news3lv.com/content/traffic/default.aspx
+IP: 172.17.3.2 HostName: 172.17.3.2
+------------------------------------------Koogle Log ---22/12/2015 12:27:31 PM-------------------------------------- 
+Search Query: http://www.ndtv.com/world-news/elon-musks-spacex-returns-to-flight-and-pulls-off-dramatic-historic-landing-1257591
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---21/01/2016 03:45:04 PM-------------------------------------- 
+Search Query: http://www.dnaindia.com/india/report-2611-mumbai-attacks-british-citizen-paralysed-in-taj-attack-becomes-first-to-win-compensation-claim-2168372
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---22/01/2016 03:07:06 PM-------------------------------------- 
+Search Query: http://economictimes.indiatimes.com/industry/energy/oil-gas/refiners-restock-with-west-african-oil-ahead-of-spr-launch/articleshow/46583740.cms
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---21/04/2016 03:42:37 PM-------------------------------------- 
+Search Query: http://www.thehindu.com/news/national/other-states/uttarakhand-presidents-rule-high-court-pained-at-centres-behaviour/article8503518.ece
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---21/04/2016 03:42:47 PM-------------------------------------- 
+Search Query: http://www.thehindu.com/news/national/other-states/uttarakhand-presidents-rule-high-court-pained-at-centres-behaviour/article8503518.ece
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---21/04/2016 03:42:58 PM-------------------------------------- 
+Search Query: http://www.ndtv.com/world-news/brazils-dilma-rousseff-going-to-un-over-impeachment-cabinet-in-crisis-1397820
+IP: 172.17.3.41 HostName: 172.17.3.41
+------------------------------------------Koogle Log ---21/04/2016 03:44:00 PM-------------------------------------- 
+Search Query: http://www.livemint.com/Consumer/tXBswz6INpdaiMMaJiNdUJ/OnePlus-smartphone-buyback-offer-Everything-you-need-to-kno.html
+IP: 172.17.3.41 HostName: 172.17.3.41

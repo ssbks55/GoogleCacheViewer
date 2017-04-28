@@ -1,0 +1,2661 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<base href="https://west-wind.com/presentations/dotnetWebRequest/dotnetWebRequest.htm"><style type="text/css">body { margin-left:0;margin-right:0;margin-top:0; }#google-cache-hdr {background:#f5f5f5 !important;font:13px arial,sans-serif !important;text-align:left !important;color:#202020 !important;border:0 !important;margin:0 !important;border-bottom:1px solid #cecece !important;line-height:16px !important ;padding:16px 28px 24px 28px !important;}#google-cache-hdr * {display:inline !important;font:inherit !important;text-align:inherit !important;color:inherit !important;line-height:inherit !important;background:none !important;border:0 !important;margin:0 !important;padding:0 !important;letter-spacing:0 !important;}#google-cache-hdr a {text-decoration:none !important;color:#1a0dab !important;}#google-cache-hdr a:hover { text-decoration:underline !important; }#google-cache-hdr a:visited { color:#609 !important; }#google-cache-hdr div { display:block !important;margin-top:4px !important; }#google-cache-hdr b {font-weight:bold !important;display:inline-block !important;direction:ltr !important;}</style><div></div><div style="position:relative;">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:st1="urn:schemas-microsoft-com:office:smarttags" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Generator" content="Microsoft FrontPage 6.0">
+<meta name="Keyword" content="WebRequest,WebResponse,.NET,dotnet,dot net,Web Service,SOAP,ADO.NET,,XML,HTTP,Web,CLR,Common Language Runtime,wwXML,wwIPStuff,Distributed Application,Rick Strahl,West Wind Technologies">
+<meta name="Description" content="Find out how to access HTTP content with the .NET WebRequest and WebResponse classes. Article gives thourough description of the classes, how to use them as well as providing a wrapper class.">
+<link rel="File-List" href="dotNetWebRequest_files/filelist.xml">
+<link rel="Edit-Time-Data" href="dotNetWebRequest_files/editdata.mso">
+<!--[if !mso]>
+<style>
+</style>
+<![endif]-->
+<title>Retrieving HTTP content in .NET with WebRequest/WebResponse</title>
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="date"></o:smarttagtype>
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PersonName"></o:smarttagtype>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Rick Strahl</o:Author>
+  <o:Template>WWArticleTemplate.dot</o:Template>
+  <o:LastAuthor>Rick Strahl</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>6</o:TotalTime>
+  <o:Created>2002-03-13T11:17:00Z</o:Created>
+  <o:LastSaved>2002-03-13T11:17:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>6863</o:Words>
+  <o:Characters>39120</o:Characters>
+  <o:Company>West Wind Technologies</o:Company>
+  <o:Lines>326</o:Lines>
+  <o:Paragraphs>91</o:Paragraphs>
+  <o:CharactersWithSpaces>45892</o:CharactersWithSpaces>
+  <o:Version>10.3311</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:_AdHocReviewCycleID dt:dt="float">1260196421</o:_AdHocReviewCycleID>
+  <o:_EmailSubject dt:dt="string">Minor follow ups with articles</o:_EmailSubject>
+  <o:_AuthorEmail dt:dt="string">rpaddock@dashpoint.com</o:_AuthorEmail>
+  <o:_AuthorEmailDisplayName dt:dt="string">Rod Paddock</o:_AuthorEmailDisplayName>
+  <o:_PreviousAdHocReviewCycleID dt:dt="float">222865376</o:_PreviousAdHocReviewCycleID>
+  <o:_ReviewingToolsShownOnce dt:dt="string"></o:_ReviewingToolsShownOnce>
+ <o:Approval_x0020_Level dt:dt="string"></o:Approval_x0020_Level>
+<o:Categories dt:dt="string"></o:Categories>
+<o:Assigned_x0020_To dt:dt="string"></o:Assigned_x0020_To>
+ </o:CustomDocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:ActiveWritingStyle Lang="EN-US" VendorID="64" DLLVersion="131078"
+   NLCheck="1">1</w:ActiveWritingStyle>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:AttachedTemplate
+   HRef="D:\Documents and Settings\rstrahl\Application Data\Microsoft\Templates\WWArticleTemplate.dot"></w:AttachedTemplate>
+  <w:UpdateStylesOnOpen/>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 5 6 2 2 2 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman"; margin-left:0in; margin-right:0in; margin-top:0in}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:20.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:Arial;
+	color:maroon;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Verdana;
+	mso-bidi-font-family:Arial;
+	color:navy;
+	mso-bidi-font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Verdana;
+	mso-bidi-font-family:Arial;}
+h4
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:10.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:Verdana;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.SideBar, li.SideBar, div.SideBar
+	{mso-style-name:SideBar;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:#99CCFF;
+	border:none;
+	mso-border-alt:solid windowtext 2.25pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;
+	mso-element:frame;
+	mso-element-frame-width:4.0in;
+	mso-element-frame-hspace:9.35pt;
+	mso-element-frame-vspace:9.35pt;
+	mso-element-wrap:around;
+	mso-element-anchor-vertical:paragraph;
+	mso-element-anchor-horizontal:column;
+	mso-element-top:.05pt;
+	mso-height-rule:exactly;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.CodeChar, li.CodeChar, div.CodeChar
+	{mso-style-name:"Code Char";
+	mso-style-parent:"";
+	mso-style-link:"Code Char Char";
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:#E6E6E6;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:maroon;
+	font-weight:bold;
+	mso-bidi-font-weight:normal; margin-left:0in; margin-right:0in; margin-top:0in}
+p.CallOut, li.CallOut, div.CallOut
+	{mso-style-name:CallOut;
+	margin-top:.5pt;
+	margin-right:0in;
+	margin-bottom:.5pt;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	background:#CCFFCC;
+	border:none;
+	mso-border-top-alt:solid windowtext 2.25pt;
+	mso-border-bottom-alt:solid windowtext 2.25pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 0in 1.0pt 0in;
+	mso-element:frame;
+	mso-element-frame-width:3.0in;
+	mso-element-frame-hspace:9.35pt;
+	mso-element-frame-vspace:9.35pt;
+	mso-element-wrap:around;
+	mso-element-anchor-vertical:paragraph;
+	mso-element-anchor-horizontal:column;
+	mso-element-top:.05pt;
+	mso-height-rule:exactly;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.Intro, li.Intro, div.Intro
+	{mso-style-name:Intro;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:#993300;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.FigureCaption, li.FigureCaption, div.FigureCaption
+	{mso-style-name:"Figure Caption";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-style:italic;}
+p.FastFacts, li.FastFacts, div.FastFacts
+	{mso-style-name:"Fast Facts";
+	margin-top:0in;
+	margin-right:4.0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:#BBCCF7;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.AuthorName, li.AuthorName, div.AuthorName
+	{mso-style-name:"Author Name";
+	margin-top:0in;
+	margin-right:4.0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-right-alt:solid blue .5pt;
+	padding:0in;
+	mso-padding-alt:0in 4.0pt 0in 0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:blue;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.Bio, li.Bio, div.Bio
+	{mso-style-name:Bio;
+	mso-style-parent:"Author Name";
+	margin-top:0in;
+	margin-right:4.0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-right-alt:solid blue .5pt;
+	padding:0in;
+	mso-padding-alt:0in 4.0pt 0in 0in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:blue;
+	mso-bidi-font-weight:bold;}
+p.SidebarCaption, li.SidebarCaption, div.SidebarCaption
+	{mso-style-name:"Sidebar Caption";
+	mso-style-parent:SideBar;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:#99CCFF;
+	border:none;
+	mso-border-alt:solid windowtext 2.25pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;
+	mso-element:frame;
+	mso-element-frame-width:4.0in;
+	mso-element-frame-hspace:9.35pt;
+	mso-element-frame-vspace:9.35pt;
+	mso-element-wrap:around;
+	mso-element-anchor-vertical:paragraph;
+	mso-element-anchor-horizontal:column;
+	mso-element-top:.05pt;
+	mso-height-rule:exactly;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+p.AuthorEmailandPhone, li.AuthorEmailandPhone, div.AuthorEmailandPhone
+	{mso-style-name:"Author Email and Phone";
+	mso-style-parent:"Author Name";
+	margin-top:0in;
+	margin-right:4.0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-right-alt:solid blue .5pt;
+	padding:0in;
+	mso-padding-alt:0in 4.0pt 0in 0in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:blue;
+	mso-bidi-font-weight:bold;
+	text-decoration:underline;
+	text-underline:single;}
+p.Callout0, li.Callout0, div.Callout0
+	{mso-style-name:Callout;
+	margin-top:0in;
+	margin-right:4.0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:#CCFF99;
+	border:none;
+	mso-border-top-alt:solid windowtext .5pt;
+	mso-border-bottom-alt:solid windowtext .5pt;
+	mso-border-right-alt:solid windowtext .5pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 4.0pt 1.0pt 0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:Verdana;
+	mso-ascii-font-family:Verdana;
+	mso-hansi-font-family:Verdana;
+	mso-bidi-font-family:Arial;
+	color:navy;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-style:italic;}
+span.CodeCharChar
+	{mso-style-name:"Code Char Char";
+	mso-style-link:"Code Char";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	color:maroon;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.CodeSnippet, li.CodeSnippet, div.CodeSnippet
+	{mso-style-name:"Code Snippet";
+	margin-top:0in;
+	margin-right:.15in;
+	margin-bottom:0in;
+	margin-left:.15in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	background:#E0E0E0;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:navy;
+	mso-no-proof:yes;}
+p.CodeListing, li.CodeListing, div.CodeListing
+	{mso-style-name:"Code Listing";
+	mso-style-parent:"Code Snippet";
+	margin-top:0in;
+	margin-right:.15in;
+	margin-bottom:0in;
+	margin-left:.15in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	background:#FFFFCC;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:maroon;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	mso-no-proof:yes;}
+p.CodeListingHeader, li.CodeListingHeader, div.CodeListingHeader
+	{mso-style-name:"Code Listing Header";
+	mso-style-parent:"Code Snippet";
+	mso-style-next:"Code Listing";
+	margin-top:0in;
+	margin-right:.15in;
+	margin-bottom:0in;
+	margin-left:.15in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	background:maroon;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:white;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	mso-no-proof:yes;}
+p.FastFactsText, li.FastFactsText, div.FastFactsText
+	{mso-style-name:"Fast Facts Text";
+	mso-style-parent:"Fast Facts";
+	margin-top:0in;
+	margin-right:4.0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:#BBCCF7;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Arial Narrow";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.StyleCodeListingHeaderRight05, li.StyleCodeListingHeaderRight05, div.StyleCodeListingHeaderRight05
+	{mso-style-name:"Style Code Listing Header + Right\: 0\.5\0022";
+	mso-style-parent:"Code Listing Header";
+	margin-top:0in;
+	margin-right:.15in;
+	margin-bottom:0in;
+	margin-left:.15in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	background:maroon;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:white;
+	mso-no-proof:yes}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:.5in .75in .5in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:210847274;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-331831366 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:217281561;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2138934540 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:366105567;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1633237450 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:400375962;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1077563722 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:546376743;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-318575890 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:1424692143;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1812060980 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6
+	{mso-list-id:1464694453;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1671786756 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:1533035063;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-134708204 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:1533609135;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1156671818 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l9
+	{mso-list-id:1741632094;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-681958288 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:1829440546;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1856925100 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l11
+	{mso-list-id:2030793059;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1483216288 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l12
+	{mso-list-id:2144813583;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-745637794 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l12:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman"}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple" style='tab-interval:.5in' topmargin="0" leftmargin="0">
+
+<div class="Section1">
+
+<table cellspacing="0" cellpadding="0" width="100%" bgcolor="#000000" border="0">
+  <tr>
+    <td valign="center" nowrap="" align="left" width="100%" bgcolor="#ffffff">
+    <img src="../../images/wwtoollogo.jpg" border="0" width="208" height="38"></td>
+  </tr>
+  <tr>
+    <td valign="center" nowrap="" align="left" width="100%" bgcolor="navy" height="20">
+    <font face="verdana,arial" color="#ffcc00" size="2"><b>&nbsp;&nbsp;White Papers&nbsp;&nbsp;&nbsp;&nbsp;</b></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <b><font face="verdana,arial" color="#ffffff" size="2">
+    <a style="color: #ffffff; text-decoration: none; text-underline: single" href="/">Home</a>&nbsp;|&nbsp;
+    <a style="color: #ffffff; text-decoration: none; text-underline: single" href="/articles.asp">
+    White Papers</a>&nbsp; |&nbsp;
+    <a style="color: #ffffff; text-decoration: none; text-underline: single" href="/wwthreads/">
+    Message Board</a>&nbsp;|&nbsp;
+    <a style="color: #ffffff; text-decoration: none; text-underline: single" href="/search_simple.asp">
+    Search</a>&nbsp;|&nbsp;
+    <a style="color: #ffffff; text-decoration: none; text-underline: single" href="/webconnection/wcpricing.htm">
+    Products</a>&nbsp;|&nbsp;
+    <a style="color: #ffffff; text-decoration: none; text-underline: single" href="/wwstore/">
+    Purchase</a>&nbsp;|&nbsp;<a style="color: #ffffff; text-decoration: none; text-underline: single" href="/news.htm">News</a>&nbsp;| 
+    &nbsp;</font></b></td>
+  </tr>
+</table>
+<blockquote>
+
+<p>&nbsp;</p>
+
+<h1>Retrieving HTTP content in .NET</h1>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="GramE">by</span> <st1:personname>Rick Strahl</st1:personname></p>
+
+<p class="MsoNormal"><st1:personname>West Wind Technologies</st1:personname></p>
+
+<p class="MsoNormal">
+<a href="http://www.west-wind.com/" style="color: blue; text-decoration: underline; text-underline: single">http://www.west-wind.com/</a></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Last Update: <st1:date year="2002" day="12" month="3">March
+ 12, 2002</st1:date><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><b style='mso-bidi-font-weight:normal'>Code for this
+article:<o:p></o:p></b></p>
+
+<p class="MsoNormal">
+<a href="http://www.west-wind.com/presentations/dotnetWebRequest/dotnetWebRequest.zip">
+http://www.west-wind.com/presentations/dotnetWebRequest/dotnetWebRequest.zip</a></p>
+
+  <![if !supportEmptyParas]>
+
+  <p class="MsoNormal">&nbsp;</p>
+
+  <p class="MsoNormal"><b>Sidebars:</b></p>
+
+  <p class="MsoNormal">
+  <a href="http://www.west-wind.com/presentations/dotnetWebRequest/dotnetWebRequest_Sidebars.htm">
+  http://www.west-wind.com/presentations/dotnetWebRequest/dotnetWebRequest_Sidebars.htm</a></p>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<table border="2" cellpadding="5" width="333" align="right" id="table1" style="border-collapse:collapse;">
+	<tr>
+		<td bgcolor="#B5C7D6">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----
+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
+NlMD07JJ8RVXtTeYnG/0p9uig+PlJ4Dc/+8a
+-----END PKCS7-----
+">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="image" align="left" hspace="4" src="/images/paypaldonate.gif" border="0" name="I1" alt="Make a donation to West Wind Technologies with PayPal - it's fast, free and secure!" width="72" height="29"><font size="1" face="Verdana">If you find this article useful, 
+consider making a small donation to show your support&nbsp; for this Web site 
+and its content.</font></td>
+	</tr>
+</table>
+</form>
+<br clear="all">
+<p>
+
+</p>
+<p class="MsoNormal">
+&nbsp;</p>
+
+<p class="MsoNormal"><b><i>&nbsp;</i></b></p>
+
+<p class="Intro">HTTP content retrieval is an important component for applications
+these days. Although .NET reduces the need to explicitly retrieve content from
+the Web through built-in mechanisms in the Web Services framework, ADO.NET and
+the XML classes, there are still many needs to retrieve Web content directly
+and manipulate it as text or data downloaded into files. In this article Rick
+describes the functionality of the <span class="SpellE">HttpWebRequest</span> and
+<span class="SpellE">HttpWebResponse</span> classes and provides an easy to use
+wrapper class. The class simplifies the HTTP access and provides most of the
+common features in an easy to use single interface while still providing full
+access to the base functionality of the <span class="SpellE">HttpWebRequest</span>
+class. In the process Rick describes some sticky issues like string encoding
+and Cookie handling and some related topics like implementing events and
+running multiple threads to service Web requests.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Last week I decided I needed a good, useful project to throw
+at .NET to continue my learning curve while actually building something I have
+a use for. A few years back I'd written a Web Monitoring package that allows me
+to monitor a set of Web sites and send out alerts when the sites are down and
+not responding. The app has been showing its age and since it was developed using
+C++ it has a clunky user interface that's not very maintainable. I thought this
+would be a good 'training' application to re-build for .NET. This application exercises
+HTTP functionality built into the .NET Framework, requires setting up and
+running multiple threads, hooking up events and managing a small set of data
+without a database backend and finally providing a Windows Form UI. In the
+future converting this application to work as a Windows service would also be a
+nice feature. This application is one that lets me explore a wide variety of
+features of a programming environment. In this month's article I'll describe a
+few of the features that I needed to build focusing specifically on the HTTP
+retrieval mechanism.</p>
+
+<h2>New HTTP tools in .NET</h2>
+
+<p class="MsoNormal">The .NET Framework provides new tools for retrieving HTTP
+content that are powerful and scalable in a single package. If you've ever
+worked in pre-.NET applications and tried to retrieve HTTP content you probably
+know that there are a number of different tools available: <span class="SpellE">WinInet</span>
+(Win32 API), XMLHTTP (part of MSXML) and recently the new <span class="SpellE">WinHTTP</span>
+COM library. These tools invariably all worked in some situations, but none of
+them really fit the bill for all instances. For example, <span class="SpellE">WinInet</span>
+can't scale on the server with no multi-threading support. XMLHTTP was too
+simple and didn't support all aspects of the HTTP model. <span class="SpellE">WinHTTP</span>
+which is the latest Microsoft tool for COM solves many of these problems but it
+doesn't work at all on Win9x, which makes it a bad choice for a client tool
+integrated into broad distribution apps at least for the moment until XP take a
+strong hold.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The.NET framework greatly simplifies HTTP access with a pair
+of classes <span class="SpellE"><i>HttpWebRequest</i></span> and <span class="SpellE"><i>HttpWebResponse</i></span><i>. </i>These classes provide just
+about all of the functionality provided through the HTTP protocol in a straightforward
+manner. The basics of returning content from the Web requires very little code
+(see Listing 1).<![if !supportLineBreakNewLine]><![endif]></p>
+
+<p class="MsoNormal"><![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></p>
+
+<p class="CodeListingHeader">Listing 1: Simple retrieval of Web data over HTTP.</p>
+
+<p class="CodeListing">string lcUrl = &quot;<a href="http://www.west-wind.com/TestPage.wwd">http://www.west-wind.com/TestPage.wwd</a>&quot;;</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">// *** Establish the request </p>
+
+<p class="CodeListing">HttpWebRequest loHttp = </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>    
+</span>(HttpWebRequest) WebRequest.Create(lcUrl);</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">// *** Set properties</p>
+
+<p class="CodeListing">loHttp.Timeout = 10000;<span style='mso-spacerun:yes'> 
+</span><span style='mso-tab-count:1'>   </span>// 10 secs</p>
+
+<p class="CodeListing">loHttp.UserAgent = &quot;Code Sample Web Client&quot;;</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">// *** Retrieve request info headers</p>
+
+<p class="CodeListing">HttpWebResponse loWebResponse = (HttpWebResponse) loHttp.GetResponse();</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">Encoding enc = Encoding.GetEncoding(1252);<span style='mso-spacerun:yes'>  </span>// Windows default Code Page</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">StreamReader loResponseStream = </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>new
+StreamReader(loWebResponse.GetResponseStream(),enc);</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">string lcHtml = loResponseStream.ReadToEnd();</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">loWebResponse.Close();</p>
+
+<p class="CodeListing">loResponseStream.Close();</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="GramE">Pretty simple, right?</span> But beneath
+this simplicity lies a lot of power too. Let's start with looking at how this
+works.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Start by creating the <span class="SpellE">HttpWebRequest</span>
+object which is the base object used to initiate a Web request. A call to the
+static <span class="SpellE"><span class="GramE"><i>WebRequest.Create</i></span></span><span class="GramE"><i>(</i></span><i>)</i> method is used to parse the URL and pass
+the resolved URL into the request object. This call will throw an exception if
+the URL passed has invalid URL syntax. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The request portion controls how the outbound HTTP request
+is structured. As such it handles configuration of the HTTP headers, the most
+common of which are expressed as properties of the <span class="SpellE">HttpWebRequest</span>
+object. A few examples are <span class="SpellE">UserAgent</span>, <span class="SpellE">ContentType</span>, Expires and even a Cookies collection which
+map directly to header values that get set when the response is sent. Headers
+can also be set explicitly using the <i>Headers</i> string collection to which
+you can add either a whole header string or a key value pair. Generally the
+properties address all common headers, so you'll rarely need to resort to
+setting headers explicitly most likely only to support special protocols (for
+example, <span class="SpellE">SoapAction</span> for SOAP requests).</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">In the example, I do nothing much with the request other
+than setting a couple of the optional properties – the <span class="SpellE">UserAgent</span>
+(the client 'browser' which is blank otherwise) and the Timeout for the request.
+If you need to POST data to the server you'll need to do a little more work –
+I'll talk about this a little later.</p>
+
+<h3>Streaming good deals</h3>
+
+<p class="MsoNormal">Once the HTTP Request is configured for sending the data, a
+call to <span class="SpellE"><span class="GramE"><i>GetResponse</i></span></span><span class="GramE"><i>(</i></span><i>)</i> actually goes out and sends the HTTP
+request to the Web Server. At this point the request sends the headers and
+retrieves the first HTTP result buffer from the Web Server. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">When the code above performs the <span class="SpellE"><span class="GramE"><i>GetResponse</i></span></span><span class="GramE"><i>(</i></span><i>)
+</i>call only a small chunk of data is returned from the Web server. The first
+chunk contains the HTTP header and the very first part of the data, which is
+simply buffered internally until read from the stream itself. The data from
+this initial request is used to set the properties of the <span class="SpellE">HttpWebResponse</span>
+object, so you can look at things like <span class="SpellE"><i>ContentType</i></span>,
+<span class="SpellE"><i>ContentLength</i></span>, <span class="SpellE"><i>StatusCode</i></span>,
+<i>Cookies</i> and much more.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Next a stream is returned using the <span class="SpellE"><span class="GramE"><i>GetResponseStream</i></span></span><span class="GramE"><i>(</i></span><i>)</i>
+method. The stream points at the actual binary HTTP response from the Web
+server. Streams give you a lot of flexibility in handling how data is <span class="SpellE">retriveved</span> from the web server (see
+<a target="_blank" href="dotNetWebRequest_sidebars.htm#Streams"> <i style='mso-bidi-font-style:
+normal'>Streams and <span class="SpellE">StreamReader</span></i> sidebar</a>). As
+mentioned, the call to <span class="SpellE"><span class="GramE"><i>GetResponse</i></span></span><span class="GramE"><i>(</i></span><i>)</i> only returned an initial internal buffer –
+to retrieve the actual data and read the rest of the result document from the
+Web server you have to read the stream.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">In the example above I use a <span class="SpellE"><i>StreamReader</i></span><i>
+</i>object to return a string from the data in a single operation. But realize
+that because a stream is returned I could access the stream directly and read
+smaller chunks to say provide status information on progress of the HTTP
+download. <o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Notice also that when the <span class="SpellE"><i>StreamReader</i></span>
+is created I had to explicitly provide an encoding type – in this case <span class="SpellE">CodePage</span> 1252 which is the Windows default codepage. This
+is important because the data is transferred as a byte stream and without the
+encoding it would result in invalid character translations for any extended
+characters. <span class="SpellE">CodePage</span> 1252 works fairly well for
+English or European language content, as well as binary content. Ideally though
+you will need to decide at runtime which encoding to use – for example a binary
+file probably should write a stream out to file or other location rather than
+converting to a string, while a page from Japan should use the appropriate
+Unicode encoding for that language. (For more information see the 
+<a href="dotNetWebRequest_sidebars.htm#stringEncoding">Encoding
+sidebar</a>).</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">I use the <span class="SpellE">StreamReader</span> object
+which provides an easy mechanism to retrieve the contents of a stream into strings
+or arrays of characters. It also provides the handy <span class="SpellE"><span class="GramE"><i>ReadToEnd</i></span></span><span class="GramE"><i>(</i></span><i>)</i>
+method which retrieves the entire stream in a single batch. The operation of
+reading the stream is what actually retrieves the data from the Web server
+(except for the initial block that was read to retrieve the headers). In this
+case a single read operation is called and retrieves the data with the request
+blocking until the data has been returned. If you wanted to provide feedback
+you can also read the data in chunks using the <span class="SpellE">StreamReader's</span>
+<span class="GramE"><i>Read(</i></span><i>) </i>method which lets you specify the
+size of the data to read. You'd run this in a loop and provide whatever status
+info you need on each read. With this mechanism you can retrieve the data and
+provide progress information. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE">StreamReader</span> also exposes the
+underlying raw stream using the <span class="SpellE">BaseStream</span> property,
+so <span class="SpellE">StreamReader</span> is a good object to use to pass
+streamed data around.</p>
+
+<h3><span class="SpellE">POSTing</span> data</h3>
+
+<p class="MsoNormal">The example above only retrieves data which is essentially
+an HTTP GET request. If you want to send data to the server you can use an HTTP
+POST operation. <span class="SpellE">POSTing</span> data refers to the process of
+taking data and sending it to the Web server as part of the request payload. A
+POST operation both sends data to the server and retrieves a response. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Posting uses a stream to send the data to the server, so the
+process of posting data is pretty much the reverse of retrieving the data (see
+listing 2).<br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></p>
+
+<p class="CodeListingHeader">Listing 2: POSTing data to the Web Server</p>
+
+<p class="CodeListing">string lcUrl =
+&quot;http://www.west-wind.com/testpage.wwd&quot;;<o:p></o:p></p>
+
+<p class="CodeListing">HttpWebRequest loHttp = <o:p></o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>(HttpWebRequest)
+WebRequest.Create(lcUrl);<o:p></o:p></p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">// *** Send any POST data<o:p></o:p></p>
+
+<p class="CodeListing">string lcPostData = <o:p></o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>&quot;Name=&quot;
++ HttpUtility.UrlEncode(&quot;<st1:personname>Rick Strahl</st1:personname>&quot;)
++ <o:p></o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>  
+</span>&quot;&amp;Company=&quot; + HttpUtility.UrlEncode(&quot;West Wind
+&quot;);<o:p></o:p></p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">loHttp.Method=&quot;POST&quot;;<o:p></o:p></p>
+
+<p class="CodeListing">byte [] lbPostBuffer = System.Text.<span style='mso-spacerun:yes'>      </span><span style='mso-spacerun:yes'>     </span></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>                      
+</span>Encoding.GetEncoding(1252).GetBytes(lcPostData);<o:p></o:p></p>
+
+<p class="CodeListing">loHttp.ContentLength = lbPostBuffer.Length;<o:p></o:p></p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">Stream loPostData = loHttp.GetRequestStream();<o:p></o:p></p>
+
+<p class="CodeListing">loPostData.Write(lbPostBuffer,0,lbPostBuffer.Length);<o:p></o:p></p>
+
+<p class="CodeListing">loPostData.Close();<o:p></o:p></p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">HttpWebResponse loWebResponse = (HttpWebResponse) loHttp.GetResponse();<o:p></o:p></p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">Encoding enc = System.Text.Encoding.GetEncoding(1252);<o:p></o:p></p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">StreamReader loResponseStream = <o:p></o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>new
+StreamReader(loWebResponse.GetResponseStream(),enc);<o:p></o:p></p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">string lcHtml = loResponseStream.ReadToEnd();<o:p></o:p></p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">loWebResponse.Close();<o:p></o:p></p>
+
+<p class="CodeListing">loResponseStream.Close();</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Make sure you use the this POST code immediately before the <span class="SpellE"><span class="GramE"><i>HttpWebRequest.GetResponse</i></span></span><span class="GramE"><i>(</i></span><i>) </i>call. All other manipulation of the Request
+object has no effect as the headers get send with the POST buffer. The rest of
+the code is identical to what was shown before – You retrieve the Response and
+then read the stream to grab the result data.<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">POST data needs to be properly encoded when sent to the
+server. If you're posting information to a Web page you'll have to make sure to
+properly encode your POST buffer into key value pairs and using <span class="SpellE">URLEncoding</span> for the values. You can utilize the static
+method <span class="SpellE"><span class="GramE">S<i>ystem.Web.HttpUtility.UrlEncode</i></span></span><span class="GramE"><i>(</i></span><i>) </i>to encode the data. In this case make sure
+to include the <span class="SpellE">System.Web</span> namespace in your project.
+Note this is necessary only if you're posting to a typical HTML page – if you're
+posting XML or other application content you can just post the raw data as is.
+This is all much easier to do using a custom class like the one included with
+this article. This class has an <span class="SpellE">AddPostKey</span> method and
+depending on the POST mode it will take any parameters and properly encode them
+into an internally manage stream which is then <span class="SpellE">POSTed</span>
+to the server. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">To send the actual data in the POST buffer the data has to
+be converted to a byte array first. Again we need to properly encode the
+string. Using <span class="SpellE"><span class="GramE"><i>Encoding.GetEncoding</i></span></span><span class="GramE"><i>(</i></span><i>1252) </i>encoding with the <span class="SpellE"><i>GetBytes</i></span><i>()</i>
+method which returns a byte array using the Windows standard ANSI code page. You
+should then set the <span class="SpellE">ContentLength</span> property so the
+server can know the size of the data stream coming in. Finally you can write
+the POST data to the server using an output stream returned from <span class="SpellE"><span class="GramE"><i>HttpWebRequest.GetRequestStream</i></span></span><span class="GramE"><i>(</i></span><i>).</i> Simply write the entire byte array out to
+the stream in one <span class="GramE"><i>Write(</i></span><i>)</i> method call
+with the appropriate size of the byte array. This writes the data and waits for
+completion. As with the retrieval operation the stream operations are what
+actually causes data to be sent to the server so if you want to provide
+progress information you can send smaller chunks and provide feedback to the
+user if needed.</p>
+
+<h2>Beyond the basics</h2>
+
+<p class="MsoNormal">The basic operation of using <span class="SpellE">HttpWebRequest/HttpWebResponse</span>
+is straight forward. But if you build typical applications that use HTTP access
+quite a bit you'll find that you'll have to set a number of additional
+properties; object properties in particular. One nice feature of the .NET
+framework is the consistency of common objects being reused for many areas of
+the framework. </p>
+
+<p class="MsoNormal">If you use Authentication in your ASP.NET applications the
+objects used on the server have the same interface as they do on the client
+side. In this section I'll address the topics of Authentication, Proxy
+configuration and using Cookies which are a few things that you probably will
+have to do as part of installing <span class="SpellE">HttpWebRequest</span> as a
+client solution. All three of these objects used by <span class="SpellE">HttpWebRequest</span>/Response
+are standard objects that you'll find in other places of the framework.</p>
+
+<h3>Authentication</h3>
+
+<p class="MsoNormal">Logging into Web content is very common for distributed
+applications as a security measure. Web authentication typically consists of
+either Basic Authentication (which is application driven prompting for an
+operating system account usually) or NTLM (integrated file security).</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">To authenticate a user you use the <i>Credentials </i>property:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">WebRequest.Credentials = new NetworkCredential(&quot;username&quot;,&quot;password&quot;);</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">If you're using Basic Authentication only the username and
+password are meaningful while with NTLM you can also pass a domain name. If
+you're authenticating against an NTLM resource (permissions set on the server's
+file system) from a Windows client application, you can also use the currently
+logged on user's credentials like this:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">WebRequest.Credentials =
+CredentialCache.DefaultCredentials;</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE">HttpWebRequest</span> handles navigation
+of the Authentication HTTP protocol requests so an authenticated request
+operates like any other if it validates. If the request fails due to authentication
+an exception is thrown. </p>
+
+<h3>Proxy Server Configuration</h3>
+
+<p class="MsoNormal">If you want to build a solid Web front end into a client
+application you will have to deal with clients that sit behind a firewall/proxy
+and you're application will have to handle these settings. Luckily <span class="SpellE">HttpWebRequest</span> makes this fairly painless with a <span class="SpellE"><i>WebProxy</i></span> class member that takes the information. To
+configure a proxy you can use code like the following:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">//<span style='mso-spacerun:yes'>  </span>pass Proxy
+string and bypass local machine</p>
+
+<p class="CodeSnippet">WebProxy loProxy = new
+WebProxy(&quot;http://proxy-server.mine.com:8080&quot;,true);</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">// ** ByPassList</p>
+
+<p class="CodeSnippet">string[] cByPass = new string[2];</p>
+
+<p class="CodeSnippet">cByPass[1] = &quot;http://someserver.net&quot;;</p>
+
+<p class="CodeSnippet">cByPass[2] = <a href="http://192.0.0.1/">http://192.0.0.1</a></p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">loProxy.BypassList = cByPass;</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">// ** Proxy Authentication</p>
+
+<p class="CodeSnippet">loProxy.Credentials = new
+NetworkCredential(&quot;proxyusername&quot;,&quot;pass&quot;);</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">Request.Proxy = loProxy;</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">How much detail is provided to the Proxy object depends on
+the particular Proxy server. For example a bypass list is not required, and
+most proxies don't require a username and password in which case you don't need
+to provide the credentials.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE">WebProxy</span> can also cram all the
+parameters into the constructor like this:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">Request.Proxy = new WebProxy(</p>
+
+<p class="CodeSnippet">&quot;http://proxy-server.mine.com:8080&quot;,true,cBypass,new
+NetworkCredential(…) );</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<h3>HTTP Cookies</h3>
+
+<p class="MsoNormal">HTTP Cookies are a state management implementation of the
+HTTP protocol and many Web pages require them. If you're using remote HTTP functionality
+to drive a Web site (following URLs and the like) you will in many case have to
+be able to support cookies.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Cookies work by storing tokens on the client side, so the
+client side is really responsible for managing any cookie created. Normally a
+browser manages all of this for you, but here there's no browser to help out in
+an application front end and we're responsible for tracking this state
+ourselves. This means when the server assigns a cookie for one request, the
+client must hang on to it and send it back to the server on the next request
+where it applies (based on the Web site and virtual directory). <span class="SpellE">HttpWebRequest</span> and <span class="SpellE">HttpWebResponse</span>
+provide the container to hold cookies both for the sending and receiving ends
+but it doesn't automatically persist them so that becomes your responsibility.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Because the Cookie collections are nicely abstracted in
+these objects it's fairly easy to save and restore them. The key to make this
+work is to have a persistent object reference to the cookie collection and then
+reuse the same cookie store each time.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">To do this let's assume you are running the request on a
+form (or some other class – this in the example below). You'd create a property
+called Cookies:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">CookieCollection Cookies;</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">On the Request end of the connection before the request is
+sent to the server you can then check whether there's a previously saved set of
+cookies and if so use them:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">Request.CookieContainer = new CookieContainer();</p>
+
+<p class="CodeSnippet">if (this.Cookies != null &amp;&amp; </p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>    </span>this.Cookies.Count
+&gt; 0) </p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>     
+</span>Request.CookieContainer.Add(this.Cookies);</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">So, if you previously had retrieved cookies, they were
+stored in the Cookies property and then added back into the Request's <span class="SpellE"><i>CookieContainer</i></span> property. <span class="SpellE">CookieContainer</span>
+is a collection of cookie collections – it's meant to be able to store cookies
+for multiple sites. Here I only deal with tracking a single set of cookies for
+a single set of requests.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">On the receiving end once the request headers have been
+retrieved after the call to <span class="SpellE"><span class="GramE"><i>GetWebResponse</i></span></span><span class="GramE"><i>(</i></span><i>)</i>, you then use code like the following:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">// *** Save the cookies on the persistent object</p>
+
+<p class="CodeSnippet">if (Response.Cookies.Count &gt; 0)</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>   </span>this.Cookies =
+Response.Cookies;<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">This saves the cookies collection until the next request
+when it is then reassigned to the Request which sends it to the server. Note,
+that this is a very simplistic cookie management approach that will work only
+if a single or a single set of cookies is set on a given Web site. If multiple
+cookies are set in multiple different places of the site you will actually have
+to retrieve the individual cookies and individually store them into the Cookie collection.
+Here's some code that demonstrates:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">if (loWebResponse.Cookies.Count &gt; 0)<o:p></o:p></p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>   </span>if (this.Cookies
+== null)</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>   </span>{</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>      </span>this.Cookies =
+loWebResponse.Cookies;</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>   </span>}</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>   </span>else </p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>   </span>{</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>      </span>// If we
+already have cookies update list</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>      </span>foreach
+(Cookie oRespCookie in </p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>               </span>loWebResponse.Cookies)
+</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>      </span>{</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>         </span>bool bMatch
+= false;</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>        
+</span>foreach(Cookie oReqCookie in </p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>                 </span>this.oCookies)
+{</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>            </span>if
+(oReqCookie.Name ==</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>               </span><span style='mso-spacerun:yes'> </span>oRespCookie.Name)<span style='mso-spacerun:yes'>    </span>{</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>               </span>oReqCookie.Value
+= </p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>                             </span>oRespCookie.Name;</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>              
+</span>bMatch = true;</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>              
+</span>break; </p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>            </span>}</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>         </span>}</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>         </span>if
+(!bMatch)</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>           
+</span>this.Cookies.Add(oRespCookie);</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>      </span>}</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>   </span>}</p>
+
+<p class="CodeSnippet">}</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">This should give you a good starting point. This code still
+doesn't deal with things like domains and virtual paths and also doesn't deal
+with saved cookies, but for most applications the above should be sufficient.<o:p></o:p></p>
+
+<h2>Wrapping it up</h2>
+
+<p class="MsoNormal">By now you're probably getting an idea of the power that is
+provided by the <span class="SpellE">HttpWebRequest</span> object. While using
+these objects is a straight forward process it does require a fair amount of
+code <span class="GramE">and ,</span> using these objects required a fair amount
+of code and knowledge of a number of classes.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Since I use HTTP access in just about every application I
+create, I decided to create a wrapper class called <span class="SpellE"><i>wwHttp</i></span>
+that simplifies the whole process quite a bit (the class is included in the
+code download for this article). Rather than creating two separate Request and
+Response objects the single class handles in a single object with simple string
+properties. The class handles setting up POST variables for you, creating any
+authentication and proxy settings from strings rather than objects, manages
+cookie and provides an optional simplified error handler that sets properties
+instead of throwing exceptions. It does this while allowing access to the base
+objects – you can pass in a <span class="SpellE">WebRequest</span> object and
+retrieve a reference to both the Request and Response objects, so you can get
+the best of both worlds with simplicity without giving up any of the features
+of the framework classes. The class also provides several overloaded methods
+for returning strings, streams and running output to file. The class can be set
+up to fire events at buffer retrieval points when data is downloaded to provide
+feed back in a GUI application.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Start by adding the namespace:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">using Westwind.Tools.Http;</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Using the class you can retrieve content from a site as
+simply as this:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">wwHttp loHttp = new wwHttp();</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">loHttp.Username = &quot;ricks&quot;;</p>
+
+<p class="CodeSnippet">loHttp.Password = &quot;password&quot;;</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">loHttp.ProxyAddress =
+&quot;http://proxy-server.hawaii.rr.com:8080&quot;;</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">loHttp.AddPostKey(&quot;Name&quot;,&quot;<st1:personname>Rick
+ Strahl</st1:personname>&quot;);</p>
+
+<p class="CodeSnippet">loHttp.AddPostKey(&quot;Company&quot;,&quot;West Wind
+Technologies&quot;);</p>
+
+<p class="CodeSnippet">loHttp.HandleCookies = true;<span style='mso-spacerun:yes'>  </span>// enable automatic tracking for 5 cookies</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">string lcHtml = loHttp.GetUrl(&quot;http://www.west-wind.com/TestPage.wwd&quot;);</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Most of those property settings are optional but just about
+everything in the class is accessible with simple strings. <span class="SpellE"><span class="GramE"><i>AddPostKey</i></span></span><span class="GramE"><i>(</i></span><i>)</i><span style='mso-spacerun:yes'>  </span>automates the creation of <span class="SpellE">UrlEncoded</span>
+strings. Several different POST modes are supported including <span class="SpellE">UrlEncoded</span> (0), Multi-Part (2) and raw XML (4) <span class="SpellE">POSTs</span>. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">A corresponding The <span class="SpellE"><span class="GramE"><i>GetUrl</i></span></span><span class="GramE"><i>(</i></span><i>)</i> methods has several different signatures.
+You can pass in an optional <span class="SpellE">WebRequest</span> object that is
+preconfigured so if you need to set one of <span class="GramE">the to</span>
+override some properties that are not exposed you can override them there. For
+example:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">HttpWebRequest oReq = (HttpWebRequest)
+WebRequest.Create(lcUrl);</p>
+
+<p class="CodeSnippet">oReq.Expires = -1</p>
+
+<p class="CodeSnippet">oReq.Headers.Add(&quot;SoapAction&quot;,&quot;http://west-wind.com/soap#Method&quot;);</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">wwHttp Request = new wwHttp();</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">string lcHTML = Request.GetUrl(oReq);</p>
+
+<p class="MsoNormal"><span class="SpellE"><span class="GramE">wwHttp</span></span>
+also exposes Error and <span class="SpellE">ErrorMsg</span> properties that can
+be used to quickly check for error conditions:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">lcHtml = Request.GetUrl(lcUrl);</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">if (Request.Error)</p>
+
+<p class="CodeSnippet"><span style='mso-tab-count:1'>    </span>MessageBox.Show(Request.ErrorMsg);</p>
+
+<p class="CodeSnippet">Else</p>
+
+<p class="CodeSnippet"><span style='mso-tab-count:1'>    </span>this.txtResult.Text
+= lcHtml;</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE">Explict</span> error retrieval is the
+default, but you can use the <span class="SpellE"><i>ThrowExceptions</i></span>
+property to have the class pass forward exceptions to your code.</p>
+
+<h2><span class="SpellE">POSTing</span> data</h2>
+
+<p class="MsoNormal">As I mentioned earlier POST data is important in Web request
+applications and getting the data into the proper format for posting can be
+tricky requiring possibly a fair amount of code. <span class="SpellE">wwHttp</span>
+abstracts the process with several overloads of the <span class="SpellE"><i style='mso-bidi-font-style:normal'>AddPostKey</i></span><i style='mso-bidi-font-style:
+normal'>() </i>method which handles the different POST modes: 1 – <span class="SpellE">URLEncoded</span> form variables, 2 – Multi-part form variables
+and files, 4 – XML or raw POST <span class="SpellE">buffers.The</span> base
+method looks as shown in Listing 3.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="StyleCodeListingHeaderRight05"><b style='mso-bidi-font-weight:normal'>Listing
+3: wwHttp::AddPostKey handles POST data<o:p></o:p></b></p>
+
+<p class="CodeListing">public void AddPostKey(string Key, byte[] Value)</p>
+
+<p class="CodeListing">{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>if
+(this.oPostData == null) </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>     
+</span>this.oPostStream = new MemoryStream();</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>this.oPostData
+= new BinaryWriter(this.oPostStream);</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>}</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>if (Key ==
+&quot;RESET&quot;) </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>     
+</span>this.oPostStream = new MemoryStream();</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>this.oPostData
+= new BinaryWriter(this.oPostStream);</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>}</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>  
+</span>switch(this.nPostMode)</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>case 1:</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>this.oPostData.Write(Encoding.GetEncoding(1252).GetBytes(</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>                       
+</span>Key + &quot;=&quot; + </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>                       
+</span>System.Web.HttpUtility.UrlEncode(Value) + &quot;&amp;&quot;));</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>         </span>break;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>case 2:</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>this.oPostData.Write( Encoding.GetEncoding(1252).GetBytes(</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>           
+</span>&quot;--&quot; + this.cMultiPartBoundary + &quot;\r\n&quot; + </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>           
+</span>&quot;Content-Disposition: form-data; name=\&quot;&quot; +Key+</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span><span style='mso-spacerun:yes'>      </span>&quot;\&quot;\r\n\r\n&quot;) );</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>         </span></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>this.oPostData.Write( Value );</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>this.oPostData.Write(
+Encoding.GetEncoding(1252).GetBytes(&quot;\r\n&quot;) );</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>         </span>break;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>default:</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>this.oPostData.Write( Value );</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>         </span>break;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>}</p>
+
+<p class="CodeListing">}<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">This method relies on a stream <span class="SpellE"><i style='mso-bidi-font-style:normal'>oPostStream</i></span> to hold the
+cumulative POST data a user might send to the server. A <span class="SpellE"><i style='mso-bidi-font-style:normal'>BinaryWriter</i></span> object is used to
+actually write to the stream sequentially without having to count bytes as you
+have to do with the raw stream.</p>
+
+<p class="MsoNormal">Next the actual POST data is actually written into the
+stream using the <span class="GramE"><i style='mso-bidi-font-style:normal'>Write(</i></span><i style='mso-bidi-font-style:normal'>) </i>of the <span class="SpellE">BinaryWriter</span>.
+Note that this version of <span class="SpellE"><span class="GramE">AddPostKey</span></span><span class="GramE">(</span>) accepts a byte[] input parameter rather than a string so
+the data can be written in its raw format.</p>
+
+<p class="MsoNormal">The <span class="SpellE">BinaryWriter</span> <span class="GramE">Write(</span>) method has overloads that allow for string
+parameters, however, this didn't work correctly for me as the encoding was
+screwed up in the output. Instead the code above explicitly performs the
+translation for any strings (including static strings like the ones for the
+multipart form <span class="SpellE">vars</span>) from string to byte array, using
+the proper encoding as discussed previously. Once again, this was tricky to
+figure out as you can set an encoding on the <span class="SpellE">BinaryWriter</span>,
+but which didn't appear to have any effect. The code shown above was the only
+working solution that runs correctly.</p>
+
+<p class="MsoNormal">There are several overloads to this method. Most importantly
+is a string version:</p>
+
+<p class="CodeSnippet">public void AddPostKey(string Key, string Value)</p>
+
+<p class="CodeSnippet">{</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>  
+</span>this.AddPostKey(Key,Encoding.GetEncoding(1252).GetBytes(Value));</p>
+
+<p class="CodeSnippet">}</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="GramE">which</span> does little more than
+converting the string into a byte array with the proper encoding. Another
+version accepts a single POST buffer, which is typically used for XML or binary
+content.</p>
+
+<p class="CodeSnippet">public void AddPostKey(string FullPostBuffer) </p>
+
+<p class="CodeSnippet">{</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'> </span>this.oPostData.Write(
+Encoding.GetEncoding(1252).GetBytes(FullPostBuffer) );</p>
+
+<p class="CodeSnippet">}</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">This one writes directly to the binary writer.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Finally there's an <span class="SpellE"><span class="GramE"><i style='mso-bidi-font-style:normal'>AddPostFile</i></span></span><span class="GramE"><i style='mso-bidi-font-style:normal'>(</i></span><i style='mso-bidi-font-style:normal'>) </i><span style='mso-spacerun:yes'> </span>method which allows you to POST a file to the
+server when running with multi-part forms (<span class="SpellE">PostMode</span>=2)
+to provide HTML file upload capabilities.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListingHeader">Listing 3.1: HTTP file upload method for multi-part
+forms</p>
+
+<p class="CodeListing">public bool AddPostFile(string Key,string FileName) </p>
+
+<p class="CodeListing">{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>byte[]
+lcFile;<span style='mso-spacerun:yes'>   </span></p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>if
+(this.nPostMode != 2) {</p>
+
+<p class="CodeListing"><span style='mso-tab-count:1'>    </span><span style='mso-spacerun:yes'>   </span>this.cErrorMsg = &quot;File upload allowed
+only with Multi-part forms&quot;;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>this.bError =
+true;</p>
+
+<p class="CodeListing"><span style='mso-tab-count:1'>    </span><span style='mso-spacerun:yes'>   </span>return false;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>}</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>try </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>{<span style='mso-spacerun:yes'>         </span></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>FileStream
+loFile = new FileStream(FileName,System.IO.FileMode.Open,</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>                                         </span>System.IO.FileAccess.Read);</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>lcFile = new byte[loFile.Length];</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>     
+</span>loFile.Read(lcFile,0,(int) loFile.Length);</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>     
+</span>loFile.Close();</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>}</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>catch(Exception
+e) </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>this.cErrorMsg
+= e.Message;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>this.bError =
+true;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>return false;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>}</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>  
+</span>this.oPostData.Write( Encoding.GetEncoding(1252).GetBytes(</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>&quot;--&quot; + this.cMultiPartBoundary + &quot;\r\n&quot;<span style='mso-spacerun:yes'>  </span>+ </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>&quot;Content-Disposition: form-data; name=\&quot;&quot; + Key +
+&quot;\&quot; filename=\&quot;&quot; + </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>         </span>new
+FileInfo(FileName).Name + &quot;\&quot;\r\n\r\n&quot;) );</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>  
+</span>this.oPostData.Write( lcFile );</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>this.oPostData.Write(
+Encoding.GetEncoding(1252).GetBytes(&quot;\r\n&quot;)) ;</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>return true;</p>
+
+<p class="CodeListing">}</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The <span class="SpellE">AddPost</span> style methods handle
+collecting POST data before the request is sent. The actual sending occurs in
+the main <span class="SpellE"><span class="GramE"><i style='mso-bidi-font-style:
+normal'>GetUrlStream</i></span></span><span class="GramE"><i style='mso-bidi-font-style:
+normal'>(</i></span><i style='mso-bidi-font-style:normal'>)</i> method of the <span class="SpellE">wwHttp</span> class.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListingHeader">Listing 3.2: Sending the POST data to the server</p>
+
+<p class="CodeListing">// *** Deal with the POST buffer if any</p>
+
+<p class="CodeListing">if (this.oPostData != null) </p>
+
+<p class="CodeListing">{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>Request.Method =
+&quot;POST&quot;;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>switch
+(this.nPostMode) </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>case 1:</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>Request.ContentType = &quot;application/x-www-form-urlencoded&quot;;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>       </span><span style='mso-spacerun:yes'>  </span>break;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>case 2:</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>Request.ContentType = &quot;multipart/form-data; boundary=&quot; + </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>                              
+</span>this.cMultiPartBoundary;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>this.oPostData.Write( Encoding.GetEncoding(1252).GetBytes(
+&quot;--&quot; + </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>                               </span>this.cMultiPartBoundary
++ &quot;\r\n&quot; ) );</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>         </span>break;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>case 4:</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>Request.ContentType = &quot;text/xml&quot;;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>         </span>break;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>default:</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>         </span>goto case
+1;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>}</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>Stream loPostData
+= Request.GetRequestStream();</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-tab-count:1'>    </span>//*** Copy the
+Memory Stream to the Request Stream</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>  
+</span>this.oPostStream.WriteTo(loPostData);</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>//*** Close the
+memory stream</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>  
+</span>this.oPostStream.Close();</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>this.oPostStream
+= null;</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>//*** Close the
+Binary Writer</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>  
+</span>this.oPostData.Close();</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>this.oPostData =
+null;</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>//*** Close Request
+Stream</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>  
+</span>loPostData.Close();</p>
+
+<p class="CodeListing">}</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">This code finalizes the request for POST data by checking
+whether we've already written something into the POST buffer and if so
+configuring the POST request by specifying the content type. In the case of
+multi-part form POST an epilogue string is added to the end of the content.</p>
+
+<p class="MsoNormal">Writing out the data entails taking the data from the memory
+stream that holds our accumulated POST data and writing it out to the request
+stream (<span class="SpellE">loPostData</span>) which actually sends the POST
+data to the server.</p>
+
+<p class="MsoNormal">As you can see a lot of things are happening in order to
+properly POST data to the server and <span class="SpellE">wwHttp</span> takes
+care of the details for you with no additional code.</p>
+
+<h2>Firing events</h2>
+
+<p class="MsoNormal">Other versions of the <span class="SpellE"><span class="GramE"><i style='mso-bidi-font-style:normal'>GetUrl</i></span></span><span class="GramE"><i style='mso-bidi-font-style:normal'>(</i></span><i style='mso-bidi-font-style:
+normal'>)</i> method return a <span class="SpellE">StreamReader</span> object and
+yet another version <span class="SpellE"><i>GetUrlEvents</i></span><i>()</i> that
+fires an <span class="SpellE"><i>OnReceiveData</i></span> event whenever data
+arrives in the buffer. The event provides a current byte and total byte count
+(if available) as well as two flags <span class="GramE">Done</span> and Cancel.
+Done lets you know when the request is finished, while the Cancel flag lets
+your code stop downloading data.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">To run with the event enabled you just hook up an event
+handler to the event:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">HttpWebRequest loHttp = new wwHttp();</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">loHttp.OnReceiveData += new </p>
+
+<p class="CodeSnippet">wwHttp.OnReceiveDataHandler(this.loHttp_OnReceiveData);</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">string lcHtml =
+loHttp.GetUrlEvents(this.txtUrl.Text.TrimEnd(),4096);</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">this.txtHTML.Text = lcHtml;</p>
+
+<p class="CodeSnippet"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">loHttp.OnReceiveData -= </p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>    </span>new
+wwHttp.OnReceiveDataHandler(</p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>                   </span>this.loHttp_OnReceiveData);</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Make sure to disconnect the handler at the end of your
+request, or set it up in a static location that runs only one time. The event
+handler method can then do some work with the data in the <span class="SpellE">OnReceiveDataArgs</span>
+<span class="SpellE">obhect</span> returned to you (Listing 3):</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListingHeader">Listing 4: Implementing the wwHttp::OnReceiveData
+event</p>
+
+<p class="CodeListing">private void loHttp_OnReceiveData(object sender, </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>                 </span>wwHttp.OnReceiveDataEventArgs
+e) <span style='mso-spacerun:yes'> </span>{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>if (e.Done)</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>     
+</span>MessageBox.Show(&quot;Download Complete!&quot;);</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>else if
+(e.NumberOfReads == 20) {</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>     
+</span>MessageBox.Show(&quot;Cancelling... too large.&quot;);</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>  </span><span style='mso-spacerun:yes'>    </span>e.Cancel = true;</p>
+
+<p class="CodeListing">}</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>else </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>     
+</span>this.oStatus.Panels[0].Text = </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>          </span>e.CurrentByteCount.ToString()
++ &quot; of<span style='mso-spacerun:yes'>  </span>&quot; + </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>         
+</span>e.TotalBytes.ToString() + &quot; bytes read&quot;;</p>
+
+<p class="CodeListing">}</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Using the event is easy. Creating the event on the <span class="SpellE">wwHttp</span> class is a bit more involved and requires three
+steps:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">First the actual event needs to be defined on the class:<br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></p>
+
+<p class="CodeSnippet"><span style='color:blue'>public</span> <span style='color:blue'>event</span> OnReceiveDataHandler OnReceiveData;</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Next the event's arguments need to be wrapped up into a class
+contains the arguments as properties:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet">public class OnReceiveDataEventArgs <o:p></o:p></p>
+
+<p class="CodeSnippet">{<o:p></o:p></p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>   </span>public long
+CurrentByteCount=0;<o:p></o:p></p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>   </span>public long
+TotalBytes = 0;<o:p></o:p></p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>   </span>public int
+NumberOfReads = 0;<o:p></o:p></p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>   </span>public char []
+CurrentChunk;<o:p></o:p></p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>   </span>public bool Done
+= false;<o:p></o:p></p>
+
+<p class="CodeSnippet"><span style='mso-spacerun:yes'>   </span>public bool
+Cancel = false;<o:p></o:p></p>
+
+<p class="CodeSnippet">}<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Creating a public Delegate which acts as the method
+signature for the Event to be called:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeSnippet"><span style='color:blue'>public</span> <span style='color:blue'>delegate</span> <span style='color:blue'>void</span> <br>
+<span style='mso-spacerun:yes'>  </span>OnReceiveDataHandler(<span style='color:blue'>object</span> sender,</p>
+
+<p class="CodeSnippet"><span style='color:blue'><span style='mso-spacerun:yes'>                    </span></span><span style='mso-spacerun:yes'> </span>OnReceiveDataEventArgs e);</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">You only need to define this delegate if you want to pass
+custom parameters. If no parameters are required you can just define your event
+use the standard <span class="SpellE">System.EventHandler</span> delegate. These
+three pieces make up the event interface.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">To actually fire the event you can simply run your code and
+call the call the function pointer that the user assigned to the event. Here's
+the relevant code from <span class="SpellE">wwHttp</span> that demonstrates how
+the Response loop is read and how the event is fired on each update cycle. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListingHeader">Listing 5: Reading the Response Stream and firing
+events</p>
+
+<p class="CodeListing">StreamReader oHttpResponse = this.GetUrlStream(Url);</p>
+
+<p class="CodeListing">if (oHttpResponse == null)</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>return
+&quot;&quot;;</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">long lnSize = BufferSize;</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">// *** Use StringBuilder to create the result string</p>
+
+<p class="CodeListing">StringBuilder loWriter = <span style='color:blue'>new</span>
+StringBuilder((<span style='color:blue'>int</span>) lnSize);<br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></p>
+
+<p class="CodeListing">// *** Create the argument structure used as event parm</p>
+
+<p class="CodeListing">OnReceiveDataEventArgs oArgs = new
+OnReceiveDataEventArgs();</p>
+
+<p class="CodeListing">oArgs.TotalBytes = lnSize;</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing">while (lnSize &gt; 0) <span style='mso-spacerun:yes'> </span>{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>lnSize =
+oHttpResponse.Read(lcTemp,0,(int) BufferSize);</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>if (lnSize &gt;
+0) </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>     
+</span>loWriter.Append(lcTemp, 0,(int) lnSize);</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>lnCount++;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>lnTotalBytes
++= lnSize;</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>// *** Raise
+an event if hooked up</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>if
+(this.OnReceiveData != null) </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>         </span>/// ***
+Update the event handler</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>oArgs.CurrentByteCount = lnTotalBytes;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>oArgs.NumberOfReads = lnCount;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>oArgs.CurrentChunk = lcTemp;</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-tab-count:1'>    </span><span style='mso-spacerun:yes'>   </span>// *** Call the event method</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>this.OnReceiveData(this,oArgs);</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>         </span>// ***
+Check for cancelled flag</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>         </span>if
+(oArgs.Cancel)</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>            </span>goto
+CloseDown;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>}</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>}</p>
+
+<p class="CodeListing">} // while</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The key to this code is the delegate <span class="SpellE"><i>OnReceiveData</i></span>
+(see the <a href="dotNetWebRequest_sidebars.htm#Delegates">Delegates Sidebar</a> for more on delegates). It acts a function pointer
+which points the assigned method on the form in the example above. From within
+the stream reading loop this method is called every time a new buffer is
+retrieved.</p>
+
+<h2>We can walk and chew gum at the same time!</h2>
+
+<p class="MsoNormal" style='margin-top:12.0pt'>Events are cool, but they're not
+all that useful if you're running in blocking mode as I've shown so far. <span class="SpellE">HttpWebRequest/HttpWebResponse</span> can also be run in
+asynchronous modes using the <span class="SpellE">BeginGetResponse/EndGetResponse</span>
+methods. Most of the stream classes provide this mechanism which allows you to
+specify a callback method to collect output retrieved from these requests (you
+can also send data asynchronously this way).</p>
+
+<p class="MsoNormal" style='margin-top:12.0pt'>However, after playing with this
+for a while and then looking at the native thread support in the .NET framework
+it turned out to be easier to create a new thread of my own and encapsulate the
+thread operation in a class. The following example runs multiple <span class="SpellE">wwHttp</span> objects on a couple of threads simultaneously while
+also updating the form with information from the <span class="SpellE">OnReceiveData</span>
+event. Figure 1 shows what the form looks like. While the HTTP requests are
+retrieved the main form thread is still available to perform other tasks, so
+you can move around the form, so the form's UI remains active all the while.</p>
+
+<p class="MsoNormal" style='margin-top:12.0pt'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1025" type="#_x0000_t75" style='width:385.5pt;
+ height:189.75pt'>
+ <v:imagedata src="dotNetWebRequest_files/image001.gif" o:title="Figure1"/>
+</v:shape><![endif]--><![if !vml]><img border="0" width="514" height="253" src="dotNetWebRequest_files/image001.gif" v:shapes="_x0000_s1025"><![endif]></p>
+
+<p class="FigureCaption"><b>Figure 1</b> – this example form runs two HTTP
+requests simultaneously firing events that update the form's status fields.
+While these requests run the form remains 'live'.</p>
+
+<p class="MsoNormal" style='margin-top:12.0pt'>This process is surprisingly
+simple in .NET partly because .NET makes it easy to route thread methods into
+classes. This make it both easy to create a thread's processing into a nicely
+encapsulated format as well as providing an easy packaging mechanism for
+passing data into a thread and keeping that data isolated from the rest of an
+application. </p>
+
+<p class="MsoNormal" style='margin-top:12.0pt'>Make sure you add the <span class="SpellE"><i>System.Threading</i></span><i> namespace </i>to your forms that
+use threads. The following code defines the thread handler class that fires the
+HTTP request with the <span class="SpellE"><span class="GramE"><i>FireUrls</i></span></span><span class="GramE"><i>(</i></span><i>)</i> method (Listing 5).<br style='mso-special-character:
+line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></p>
+
+<p class="CodeListingHeader">Listing 6: Implementing a Thread class</p>
+
+<p class="CodeListing">public class GetUrls </p>
+
+<p class="CodeListing">{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>public string Url
+= &quot;&quot;;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>public
+wwHttpMultiThread ParentForm = null;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>public int
+Instance = 1;</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>public void
+FireUrls() </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>wwHttp oHttp =
+new wwHttp();</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>     
+</span>oHttp.OnReceiveData += </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>                    </span><span style='mso-spacerun:yes'> </span><span style='mso-spacerun:yes'>    </span>new
+wwHttp.OnReceiveDataHandler(this.OnReceiveData);</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>     
+</span>oHttp.Timeout=5;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>string lcHTML
+= oHttp.GetUrlEvents(this.Url,4096);</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>if
+(oHttp.Error)</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>this.ParentForm.lblResult.Text = oHttp.ErrorMsg;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>}</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>public void
+OnReceiveData(object sender, </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>                        
+</span>wwHttp.OnReceiveDataEventArgs e) </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>if
+(this.Instance == 1)</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>this.ParentForm.lblResult.Text = </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>               </span>e.CurrentByteCount.ToString()
++ &quot; bytes&quot;;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>      </span>else</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>        
+</span>this.ParentForm.lblResult2.Text = <br>
+<span style='mso-spacerun:yes'>               </span>e.CurrentByteCount.ToString()
++ &quot; bytes&quot;;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>}</p>
+
+<p class="CodeListing">}<o:p></o:p></p>
+
+<p class="MsoNormal" style='margin-top:12.0pt'>There's nothing special about this
+class – in fact any class would do as thread handler (as long as you write
+thread safe code). This simplified implementation includes a reference back to
+the <span class="SpellE">ParentForm</span> that makes it possible to access the
+status labels on the form. The Instance property is used to identify which
+request is updating which form control. The actual code here is very much like
+code I've previously shown using the <span class="SpellE">wwHttp</span> object.
+Note that this code assigns the event handler a method of the thread action
+class. This method then calls back to the <span class="SpellE">ParentForm</span>
+and updates the labels.</p>
+
+<p class="MsoNormal" style='margin-top:12.0pt'>The calling code on the form creates
+two threads that call the <span class="SpellE">FireUrls</span> method as follows
+(Listing 6):<br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></p>
+
+<p class="CodeListingHeader">Listing 7: Creating and running the Thread</p>
+
+<p class="CodeListing">private void cmdGo_Click(object sender, System.EventArgs
+e)</p>
+
+<p class="CodeListing">{</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>GetUrls oGetUrls
+= new GetUrls();</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>oGetUrls.Url =
+this.txtUrl.Text;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>  
+</span>oGetUrls.ParentForm = this;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>ThreadStart
+oDelegate = </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>               </span>new ThreadStart(oGetUrls.FireUrls);</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>Thread myThread =
+new Thread(oDelegate);</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>myThread.Start();</p>
+
+<p class="CodeListing"><o:p>&nbsp;</o:p></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>GetUrls oGetUrls2
+= new GetUrls();</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>  
+</span>oGetUrls2.ParentForm = this;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>oGetUrls2.Url =
+this.txtUrl2.Text;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>  
+</span>oGetUrls2.Instance = 2;</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span></p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>ThreadStart
+oDelegate2 = </p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>              </span>new
+ThreadStart(oGetUrls2.FireUrls);</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>Thread myThread2
+= new Thread(oDelegate2);</p>
+
+<p class="CodeListing"><span style='mso-spacerun:yes'>   </span>myThread2.Start();</p>
+
+<p class="CodeListing">}</p>
+
+<p class="MsoNormal" style='margin-top:12.0pt'>To start a thread the <span class="SpellE"><span class="GramE"><i style='mso-bidi-font-style:normal'>ThreadStart</i></span></span><span class="GramE"><i style='mso-bidi-font-style:normal'>(</i></span><i style='mso-bidi-font-style:normal'>)</i> function is called which takes a
+function pointer (basically a reference that points at a specific method in a
+class) as an argument. This returns a Delegate that can be used to create a new
+thread and tell it to start running with this pointer. You can pass either an
+instance variable of a static address of static class method. In most cases
+you'll want to use a method of a dynamic instance object variable, because it
+gives you the ability to fully set up the instance by setting properties that
+you'll need as part of the processing. Think of the actual thread
+implementation class as wrapper that is used as the high level calling
+mechanism and parameter packager to your actual processing code. If you need to
+pass data back to some other object you can make this instance a member of
+another object. For example, I could have made this object part of the form
+which would then allow the form to access the members of the 'thread' class and
+both could share the data.</p>
+
+<p class="MsoNormal" style='margin-top:12.0pt'>Creating threads and running them
+is very easy but make sure you manage your data cleanly to prevent access of
+shared data from different threads at the same time. Shared data needs to be
+protected with synchronization of some sort. In fact, you can see why this is
+an issue if you click the Go link on the sample form a few times while
+downloads are still running. You'll see the numbers jump back and forth as
+multiple threads update the same fields on the form. As multiple instances are
+writing to the labels at the same time the code will eventually blow up. The
+workaround for this is to use synchronized methods to handle the updates or to
+use separate forms to display the update information (new form for each
+request). The topic of synchronization is beyond the scope of this article and
+I’ll cover basic multi-threading concepts in a future article.</p>
+
+<h2>The Web at your fingertips</h2>
+
+<p class="MsoNormal">This cliché has been so overused, but I can say .NET really
+delivers on this promise in a number of ways. Yes you could do all of this and
+most other Internet related things before, but .NET brings a consistent model
+to the tools. In addition you get straight forward support for advanced
+features like easy to implement multi-threading and (albeit somewhat complex)
+event support that make it easy to created complex applications that utilize
+the tools in ways that were either not possible in, or took a lot more work
+previously.</p>
+
+<p class="MsoNormal">The tools are all there to access the Web very easily
+whether it's through the high level tools in .NET or the <span class="GramE">more
+lower</span> level network protocol classes. The <span class="SpellE">HttpWebRequest</span>
+class is a fairly easy and powerful implementation that provides an excellent
+balance between flexibility and ease of use. For me the <span class="SpellE">wwHttp</span>
+class has been an exercise in understanding and utilizing the <span class="SpellE">HttpWebRequest</span>/Response classes. I hope you find the class
+useful if not as is then as an example of a variety of things that need to be
+done with HTTP requests frequently. The class is not complete and some features
+will need expansion in the future, but it's good starting point.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">As always if you have questions or comments I and all of
+Code Magazine's editors and writers welcome them at:</p>
+
+<p class="MsoNormal"><a href="http://www.west-wind.com/wwthreads/default.asp?Forum=Code+Magazine">http://www.west-wind.com/wwthreads/default.asp?Forum=Code+Magazine</a></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<table cellspacing="0" cellpadding="0" hspace="0" vspace="0" width="396" align="left">
+ <tr>
+  <td valign="top" align="left" style='padding-top:9.35pt;padding-right:9.35pt;
+  padding-bottom:9.35pt;padding-left:9.35pt'>
+  <div style='border:solid windowtext 2.25pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+  background:#99CCFF'>
+  <p class="SidebarCaption">Resources</p>
+  <p class="SideBar"><o:p>&nbsp;</o:p></p>
+  <p class="SideBar"><b>Code for this article:<o:p></o:p></b></p>
+  <p class="SideBar">
+<a href="http://www.west-wind.com/presentations/dotnetWebRequest/dotnetWebRequest.zip">
+http://www.west-wind.com/presentations/dotnetWebRequest/dotnetWebRequest.zip</a></p>
+  <p class="SideBar"><o:p>&nbsp;</o:p></p>
+  <p class="SideBar"><b>String Encoding Reference</b>:<o:p></o:p></p>
+  <p class="SideBar">Applied Microsoft.NET Framework programming – Jeffrey
+  Richter</p>
+  </div>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+</blockquote>
+
+</div>
+
+<p>&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<table border="2" cellpadding="5" width="333" align="right" id="table2" style="border-collapse:collapse;">
+	<tr>
+		<td bgcolor="#B5C7D6">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----
+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
+NlMD07JJ8RVXtTeYnG/0p9uig+PlJ4Dc/+8a
+-----END PKCS7-----
+">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="image" align="left" hspace="4" src="/images/paypaldonate.gif" border="0" name="I2" alt="Make a donation to West Wind Technologies with PayPal - it's fast, free and secure!" width="72" height="29"><font size="1" face="Verdana">If you find this article useful, 
+consider making a small donation to show your support&nbsp; for this Web site 
+and its content.</font></td>
+	</tr>
+</table>
+</form>
+<br clear="all">
+<p>
+
+</p>
+<p>&nbsp;</p>
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:st1="urn:schemas-microsoft-com:office:smarttags" xmlns="http://www.w3.org/TR/REC-html40">
+
+<body lang="EN-US" link="blue" vlink="purple" style='tab-interval:.5in' topmargin="0" leftmargin="0">
+
+<div class="Section1">
+
+<p class="MsoNormal"><i><span style="font-size: 9.0pt">
+<img border="0" src="../Editorials/RickAuthor.gif" width="128" height="170" align="left"></span></i></p>
+<p class="MsoNormal"><i><span style="font-size: 9.0pt">Rick Strahl is president 
+of West Wind Technologies on Maui, Hawaii. The company specializes in Web and 
+distributed application development and tools with focus on Windows 2000, ISAPI, 
+.Net and 
+Visual Studio. Rick is author of
+<a href="http://www.west-wind.com/webconnection/" style="color: blue; text-decoration: underline; text-underline: single">
+West Wind Web Connection</a>, a powerful and widely used Web application 
+framework for Visual FoxPro and
+<a href="http://www.west-wind.com/wwhelp/" style="color: blue; text-decoration: underline; text-underline: single">
+West Wind HTML Help Builder</a>. He's also a Microsoft Most Valuable 
+Professional, and a frequent contributor to magazines and books. He is 
+co-publisher and co-editor of CoDe magazine, and his book, &quot;Internet 
+Applications with Visual FoxPro 6.0&quot;, is published by Hentzenwerke Publishing. 
+For more information please visit:
+<a href="http://www.west-wind.com/" style="color: blue; text-decoration: underline; text-underline: single">
+http://www.west-wind.com/</a>.</span></i></p>
+
+</div>
+<br clear="all">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#000000">
+  <tr>
+   <td bgcolor="#FFFFFF" valign="MIDDLE" align="Left" nowrap="" width="100%">
+   <img border="0" src="../../images/wwtoollogo.jpg" width="208" height="38"></td>    
+  </tr>
+  <tr>
+<td align="left" valign="middle" nowrap="" bgcolor="Navy" height="20" width="100%">
+<font face="verdana,arial" size="2" color="#FFCC00"><b>&nbsp;&nbsp;White Papers&nbsp;&nbsp;&nbsp;&nbsp;</b></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><font face="verdana,arial" size="2" color="#FFFFFF">
+<a href="/" style="color:#FFFFFF;text-decoration:none; text-underline:single">Home</a>&nbsp;|&nbsp
+<a href="/articles.asp" style="color:#FFFFFF;text-decoration:none; text-underline:single">White Papers</a>&nbsp; |&nbsp; 
+<a href="/wwthreads/" style="color:#FFFFFF;text-decoration:none; text-underline:single">Message Board</a>&nbsp;|&nbsp
+<a href="/search_simple.asp" style="color:#FFFFFF;text-decoration:none; text-underline:single">Search</a>&nbsp;|&nbsp
+<a href="/webconnection/wcpricing.htm" style="color:#FFFFFF;text-decoration:none; text-underline:single">Products</a>&nbsp;|&nbsp 
+<a href="/wwstore/" style="color:#FFFFFF;text-decoration:none; text-underline:single">Purchase</a>&nbsp;|&nbsp<a href="/news.htm" style="color:#FFFFFF;text-decoration:none; text-underline:single">News</a>&nbsp;| &nbsp</font></b></td>
+  </tr>
+</table>
+
+
+</body>
+</html></body></html></div>

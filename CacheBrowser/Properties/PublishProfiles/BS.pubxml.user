@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/CacheBrowser.dll">
+      <publishTime>04/24/2017 15:32:33</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>04/24/2017 15:22:29</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>04/24/2017 15:12:14</publishTime>
+    </File>
+    <File Include="Dummy.html">
+      <publishTime>04/24/2017 15:32:11</publishTime>
+    </File>
+    <File Include="Empty.html">
+      <publishTime>06/04/2015 10:49:02</publishTime>
+    </File>
+    <File Include="Error.html">
+      <publishTime>09/23/2015 12:24:00</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>06/04/2015 12:37:23</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/24/2017 15:22:30</publishTime>
+    </File>
+    <File Include="Resources/BlockedIPAddresses.txt">
+      <publishTime>04/21/2016 15:47:36</publishTime>
+    </File>
+    <File Include="Resources/KoogleUserSearchHistory.txt">
+      <publishTime>04/21/2016 15:44:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/24/2017 15:35:14</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
